@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25088BD71DA3DCE300164639 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BD51DA3DCE300164639 /* BTDiscovery.swift */; };
+		25088BD81DA3DCE300164639 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BD61DA3DCE300164639 /* BTService.swift */; };
+		25088BDB1DA7D0F700164639 /* BikesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BDA1DA7D0F700164639 /* BikesTableViewController.swift */; };
+		25088BDF1DB3D1B400164639 /* BikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BDE1DB3D1B400164639 /* BikeTableViewCell.swift */; };
+		251920C11D883921003C863C /* TransparentNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251920C01D883921003C863C /* TransparentNavBarViewController.swift */; };
+		2521F7CD1D65E85B00F796A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2521F7CC1D65E85B00F796A2 /* AppDelegate.swift */; };
+		2521F7D21D65E85B00F796A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2521F7D01D65E85B00F796A2 /* Main.storyboard */; };
+		2521F7D41D65E85B00F796A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2521F7D31D65E85B00F796A2 /* Assets.xcassets */; };
+		2521F7D71D65E85B00F796A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2521F7D51D65E85B00F796A2 /* LaunchScreen.storyboard */; };
+		2521F7DF1D6A075400F796A2 /* GameSceneRendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2521F7DE1D6A075400F796A2 /* GameSceneRendererDelegate.swift */; };
+		2521F7E11D6A0A5700F796A2 /* SPScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2521F7E01D6A0A5700F796A2 /* SPScene.swift */; };
+		2521F7E41D6A0AE100F796A2 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2521F7E31D6A0AE100F796A2 /* art.scnassets */; };
+		252D08F31DC0D6AF009D544D /* GameControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D08F21DC0D6AF009D544D /* GameControllerManager.swift */; };
+		25BEE2B21D8AD9330069C658 /* SPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BEE2B11D8AD9330069C658 /* SPController.swift */; };
+		25D79F4C1D8F3F4D00E1A587 /* VRGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D79F4B1D8F3F4D00E1A587 /* VRGameViewController.swift */; };
+		25D79F4E1D8F4B9300E1A587 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D79F4D1D8F4B9300E1A587 /* SCNVector3Extensions.swift */; };
+		25DC66411DC66E0E00202C6B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC66401DC66E0E00202C6B /* MainViewController.swift */; };
+		25DC66441DC6730000202C6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC66431DC6730000202C6B /* User.swift */; };
+		25DC66471DC6761200202C6B /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC66461DC6761200202C6B /* MultiplayerViewController.swift */; };
+		25E046A71D92C3CE00958130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E046A61D92C3CE00958130 /* AppDelegate.swift */; };
+		25E046A91D92C3CE00958130 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E046A81D92C3CE00958130 /* art.scnassets */; };
+		25E046AB1D92C3CE00958130 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E046AA1D92C3CE00958130 /* GameViewController.swift */; };
+		25E046AE1D92C3CE00958130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E046AC1D92C3CE00958130 /* Main.storyboard */; };
+		25E046B01D92C3CE00958130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E046AF1D92C3CE00958130 /* Assets.xcassets */; };
+		25EC54291D746B3700448ED2 /* SCNSceneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EC54281D746B3700448ED2 /* SCNSceneExtensions.swift */; };
+		25EC542B1D78617B00448ED2 /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EC542A1D78617B00448ED2 /* GameSceneView.swift */; };
+		A6E6DAFEF77CD56C676ADA88 /* Pods_PaperBoyMultiplayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93450449A1BADB65C9C1003 /* Pods_PaperBoyMultiplayer.framework */; };
+		C952B54CC6D76F7C060DF9A3 /* Pods_PaperBoyVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A69D06482BEB3327B45A8 /* Pods_PaperBoyVR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D7240CC21F67B6A459B6263 /* Pods-PaperBoyMultiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperBoyMultiplayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer.release.xcconfig"; sourceTree = "<group>"; };
+		11130E16FB8A27481A11046D /* Pods-PaperBoyMultiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperBoyMultiplayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer.debug.xcconfig"; sourceTree = "<group>"; };
+		25088BD51DA3DCE300164639 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
+		25088BD61DA3DCE300164639 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
+		25088BDA1DA7D0F700164639 /* BikesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikesTableViewController.swift; sourceTree = "<group>"; };
+		25088BDE1DB3D1B400164639 /* BikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeTableViewCell.swift; sourceTree = "<group>"; };
+		251920C01D883921003C863C /* TransparentNavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentNavBarViewController.swift; sourceTree = "<group>"; };
+		2521F7C91D65E85B00F796A2 /* PaperBoyVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperBoyVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2521F7CC1D65E85B00F796A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2521F7D11D65E85B00F796A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2521F7D31D65E85B00F796A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2521F7D61D65E85B00F796A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2521F7D81D65E85B00F796A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2521F7DE1D6A075400F796A2 /* GameSceneRendererDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneRendererDelegate.swift; sourceTree = "<group>"; };
+		2521F7E01D6A0A5700F796A2 /* SPScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPScene.swift; sourceTree = "<group>"; };
+		2521F7E31D6A0AE100F796A2 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		252D08F21DC0D6AF009D544D /* GameControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControllerManager.swift; sourceTree = "<group>"; };
+		253854AB1DC75F1600B68119 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "Pods/../build/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
+		25BEE2B11D8AD9330069C658 /* SPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPController.swift; sourceTree = "<group>"; };
+		25D79F4B1D8F3F4D00E1A587 /* VRGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRGameViewController.swift; sourceTree = "<group>"; };
+		25D79F4D1D8F4B9300E1A587 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
+		25DC66401DC66E0E00202C6B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		25DC66431DC6730000202C6B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		25DC66461DC6761200202C6B /* MultiplayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
+		25E046A41D92C3CE00958130 /* PaperBoyMultiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperBoyMultiplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E046A61D92C3CE00958130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25E046A81D92C3CE00958130 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		25E046AA1D92C3CE00958130 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		25E046AD1D92C3CE00958130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25E046AF1D92C3CE00958130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25E046B11D92C3CE00958130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25EC54281D746B3700448ED2 /* SCNSceneExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNSceneExtensions.swift; sourceTree = "<group>"; };
+		25EC542A1D78617B00448ED2 /* GameSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
+		392D7C155A54134DEE712C8B /* Pods-PaperBoyVR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperBoyVR.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaperBoyVR/Pods-PaperBoyVR.release.xcconfig"; sourceTree = "<group>"; };
+		549439BDD558D80604847731 /* Pods-PaperBoyVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperBoyVR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaperBoyVR/Pods-PaperBoyVR.debug.xcconfig"; sourceTree = "<group>"; };
+		A73A69D06482BEB3327B45A8 /* Pods_PaperBoyVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaperBoyVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93450449A1BADB65C9C1003 /* Pods_PaperBoyMultiplayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaperBoyMultiplayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2521F7C61D65E85B00F796A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C952B54CC6D76F7C060DF9A3 /* Pods_PaperBoyVR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25E046A11D92C3CE00958130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E6DAFEF77CD56C676ADA88 /* Pods_PaperBoyMultiplayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25088BD41DA3DCB700164639 /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				25088BD51DA3DCE300164639 /* BTDiscovery.swift */,
+				25088BD61DA3DCE300164639 /* BTService.swift */,
+			);
+			name = BlueTooth;
+			sourceTree = "<group>";
+		};
+		25088BD91DA7CB7700164639 /* Bike Connection */ = {
+			isa = PBXGroup;
+			children = (
+				25088BDA1DA7D0F700164639 /* BikesTableViewController.swift */,
+				25088BDE1DB3D1B400164639 /* BikeTableViewCell.swift */,
+			);
+			name = "Bike Connection";
+			sourceTree = "<group>";
+		};
+		2521F7C01D65E85B00F796A2 = {
+			isa = PBXGroup;
+			children = (
+				2521F7CB1D65E85B00F796A2 /* PaperBoyVR */,
+				25E046A51D92C3CE00958130 /* PaperBoyMultiplayer */,
+				2521F7CA1D65E85B00F796A2 /* Products */,
+				7D4C0FF1B60225A7446405D3 /* Pods */,
+				E2CDAA8E5305A162F5FCD688 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2521F7CA1D65E85B00F796A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2521F7C91D65E85B00F796A2 /* PaperBoyVR.app */,
+				25E046A41D92C3CE00958130 /* PaperBoyMultiplayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2521F7CB1D65E85B00F796A2 /* PaperBoyVR */ = {
+			isa = PBXGroup;
+			children = (
+				25DC66451DC675FA00202C6B /* Multiplayer */,
+				25DC66421DC672AF00202C6B /* Model */,
+				25088BD91DA7CB7700164639 /* Bike Connection */,
+				25088BD41DA3DCB700164639 /* BlueTooth */,
+				2521F7CC1D65E85B00F796A2 /* AppDelegate.swift */,
+				2521F7D01D65E85B00F796A2 /* Main.storyboard */,
+				2521F7D31D65E85B00F796A2 /* Assets.xcassets */,
+				2521F7D51D65E85B00F796A2 /* LaunchScreen.storyboard */,
+				2521F7D81D65E85B00F796A2 /* Info.plist */,
+				2521F7DE1D6A075400F796A2 /* GameSceneRendererDelegate.swift */,
+				2521F7E01D6A0A5700F796A2 /* SPScene.swift */,
+				25EC54281D746B3700448ED2 /* SCNSceneExtensions.swift */,
+				2521F7E31D6A0AE100F796A2 /* art.scnassets */,
+				25EC542A1D78617B00448ED2 /* GameSceneView.swift */,
+				251920C01D883921003C863C /* TransparentNavBarViewController.swift */,
+				25BEE2B11D8AD9330069C658 /* SPController.swift */,
+				25D79F4B1D8F3F4D00E1A587 /* VRGameViewController.swift */,
+				25D79F4D1D8F4B9300E1A587 /* SCNVector3Extensions.swift */,
+				25DC66401DC66E0E00202C6B /* MainViewController.swift */,
+			);
+			path = PaperBoyVR;
+			sourceTree = "<group>";
+		};
+		25DC66421DC672AF00202C6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25DC66431DC6730000202C6B /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		25DC66451DC675FA00202C6B /* Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				25DC66461DC6761200202C6B /* MultiplayerViewController.swift */,
+			);
+			name = Multiplayer;
+			sourceTree = "<group>";
+		};
+		25E046A51D92C3CE00958130 /* PaperBoyMultiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				252D08F21DC0D6AF009D544D /* GameControllerManager.swift */,
+				25E046A61D92C3CE00958130 /* AppDelegate.swift */,
+				25E046A81D92C3CE00958130 /* art.scnassets */,
+				25E046AA1D92C3CE00958130 /* GameViewController.swift */,
+				25E046AC1D92C3CE00958130 /* Main.storyboard */,
+				25E046AF1D92C3CE00958130 /* Assets.xcassets */,
+				25E046B11D92C3CE00958130 /* Info.plist */,
+			);
+			path = PaperBoyMultiplayer;
+			sourceTree = "<group>";
+		};
+		7D4C0FF1B60225A7446405D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11130E16FB8A27481A11046D /* Pods-PaperBoyMultiplayer.debug.xcconfig */,
+				0D7240CC21F67B6A459B6263 /* Pods-PaperBoyMultiplayer.release.xcconfig */,
+				549439BDD558D80604847731 /* Pods-PaperBoyVR.debug.xcconfig */,
+				392D7C155A54134DEE712C8B /* Pods-PaperBoyVR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2CDAA8E5305A162F5FCD688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				253854AB1DC75F1600B68119 /* CocoaAsyncSocket.framework */,
+				D93450449A1BADB65C9C1003 /* Pods_PaperBoyMultiplayer.framework */,
+				A73A69D06482BEB3327B45A8 /* Pods_PaperBoyVR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2521F7C81D65E85B00F796A2 /* PaperBoyVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2521F7DB1D65E85B00F796A2 /* Build configuration list for PBXNativeTarget "PaperBoyVR" */;
+			buildPhases = (
+				6A624EFABA7934E1CE805740 /* Check Pods Manifest.lock */,
+				2521F7C51D65E85B00F796A2 /* Sources */,
+				2521F7C61D65E85B00F796A2 /* Frameworks */,
+				2521F7C71D65E85B00F796A2 /* Resources */,
+				9BF1D6D3E87E32E69AAE4549 /* Embed Pods Frameworks */,
+				1F95EE216621609AD8085087 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperBoyVR;
+			productName = PaperBoyVR;
+			productReference = 2521F7C91D65E85B00F796A2 /* PaperBoyVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25E046A31D92C3CE00958130 /* PaperBoyMultiplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25E046B41D92C3CE00958130 /* Build configuration list for PBXNativeTarget "PaperBoyMultiplayer" */;
+			buildPhases = (
+				4DD191A9D7405670CD8E95B6 /* Check Pods Manifest.lock */,
+				25E046A01D92C3CE00958130 /* Sources */,
+				25E046A11D92C3CE00958130 /* Frameworks */,
+				25E046A21D92C3CE00958130 /* Resources */,
+				5073D95E05B9B7CFEBCA4DC7 /* Embed Pods Frameworks */,
+				E7126F031D9A2F0323D9DE4C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperBoyMultiplayer;
+			productName = PaperBoyMultiplayer;
+			productReference = 25E046A41D92C3CE00958130 /* PaperBoyMultiplayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2521F7C11D65E85B00F796A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Hamilton Santos";
+				TargetAttributes = {
+					2521F7C81D65E85B00F796A2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 28CU5YV2B9;
+						LastSwiftMigration = 0800;
+					};
+					25E046A31D92C3CE00958130 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 28CU5YV2B9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2521F7C41D65E85B00F796A2 /* Build configuration list for PBXProject "PaperBoyVR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2521F7C01D65E85B00F796A2;
+			productRefGroup = 2521F7CA1D65E85B00F796A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2521F7C81D65E85B00F796A2 /* PaperBoyVR */,
+				25E046A31D92C3CE00958130 /* PaperBoyMultiplayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2521F7C71D65E85B00F796A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2521F7D71D65E85B00F796A2 /* LaunchScreen.storyboard in Resources */,
+				2521F7E41D6A0AE100F796A2 /* art.scnassets in Resources */,
+				2521F7D41D65E85B00F796A2 /* Assets.xcassets in Resources */,
+				2521F7D21D65E85B00F796A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25E046A21D92C3CE00958130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E046A91D92C3CE00958130 /* art.scnassets in Resources */,
+				25E046B01D92C3CE00958130 /* Assets.xcassets in Resources */,
+				25E046AE1D92C3CE00958130 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F95EE216621609AD8085087 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperBoyVR/Pods-PaperBoyVR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD191A9D7405670CD8E95B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5073D95E05B9B7CFEBCA4DC7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A624EFABA7934E1CE805740 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF1D6D3E87E32E69AAE4549 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperBoyVR/Pods-PaperBoyVR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7126F031D9A2F0323D9DE4C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2521F7C51D65E85B00F796A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D79F4E1D8F4B9300E1A587 /* SCNVector3Extensions.swift in Sources */,
+				25DC66471DC6761200202C6B /* MultiplayerViewController.swift in Sources */,
+				25088BDF1DB3D1B400164639 /* BikeTableViewCell.swift in Sources */,
+				251920C11D883921003C863C /* TransparentNavBarViewController.swift in Sources */,
+				25EC542B1D78617B00448ED2 /* GameSceneView.swift in Sources */,
+				2521F7E11D6A0A5700F796A2 /* SPScene.swift in Sources */,
+				25088BD81DA3DCE300164639 /* BTService.swift in Sources */,
+				2521F7DF1D6A075400F796A2 /* GameSceneRendererDelegate.swift in Sources */,
+				25DC66411DC66E0E00202C6B /* MainViewController.swift in Sources */,
+				25DC66441DC6730000202C6B /* User.swift in Sources */,
+				2521F7CD1D65E85B00F796A2 /* AppDelegate.swift in Sources */,
+				25088BD71DA3DCE300164639 /* BTDiscovery.swift in Sources */,
+				25BEE2B21D8AD9330069C658 /* SPController.swift in Sources */,
+				25D79F4C1D8F3F4D00E1A587 /* VRGameViewController.swift in Sources */,
+				25088BDB1DA7D0F700164639 /* BikesTableViewController.swift in Sources */,
+				25EC54291D746B3700448ED2 /* SCNSceneExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25E046A01D92C3CE00958130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E046AB1D92C3CE00958130 /* GameViewController.swift in Sources */,
+				252D08F31DC0D6AF009D544D /* GameControllerManager.swift in Sources */,
+				25E046A71D92C3CE00958130 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2521F7D01D65E85B00F796A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2521F7D11D65E85B00F796A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2521F7D51D65E85B00F796A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2521F7D61D65E85B00F796A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		25E046AC1D92C3CE00958130 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25E046AD1D92C3CE00958130 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2521F7D91D65E85B00F796A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2521F7DA1D65E85B00F796A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2521F7DC1D65E85B00F796A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549439BDD558D80604847731 /* Pods-PaperBoyVR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28CU5YV2B9;
+				INFOPLIST_FILE = PaperBoyVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2521F7DD1D65E85B00F796A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392D7C155A54134DEE712C8B /* Pods-PaperBoyVR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28CU5YV2B9;
+				INFOPLIST_FILE = PaperBoyVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		25E046B21D92C3CE00958130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11130E16FB8A27481A11046D /* Pods-PaperBoyMultiplayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 28CU5YV2B9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = PaperBoyMultiplayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyMultiplayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		25E046B31D92C3CE00958130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7240CC21F67B6A459B6263 /* Pods-PaperBoyMultiplayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 28CU5YV2B9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = PaperBoyMultiplayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyMultiplayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2521F7C41D65E85B00F796A2 /* Build configuration list for PBXProject "PaperBoyVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2521F7D91D65E85B00F796A2 /* Debug */,
+				2521F7DA1D65E85B00F796A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2521F7DB1D65E85B00F796A2 /* Build configuration list for PBXNativeTarget "PaperBoyVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2521F7DC1D65E85B00F796A2 /* Debug */,
+				2521F7DD1D65E85B00F796A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25E046B41D92C3CE00958130 /* Build configuration list for PBXNativeTarget "PaperBoyMultiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E046B21D92C3CE00958130 /* Debug */,
+				25E046B31D92C3CE00958130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2521F7C11D65E85B00F796A2 /* Project object */;
+}
