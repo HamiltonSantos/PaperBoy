@@ -16,7 +16,7 @@ class GameControllerManager: NSObject, GCDAsyncSocketDelegate, NetServiceDelegat
     var socket: GCDAsyncSocket!
     var clientSockets: NSMutableArray!
     var delegate: GameControllerManagerDelegate?
-    let serviceType = "_sidespin"
+    let serviceType = "_paperBoyMultiplayer"
     let serviceProtocol = "_tcp"
 
     override init() {
@@ -39,7 +39,7 @@ class GameControllerManager: NSObject, GCDAsyncSocketDelegate, NetServiceDelegat
 
         //Initialize Service
         let localPort = self.socket.localPort
-        service = NetService(domain: "local", type: "\(serviceType).\(serviceProtocol)", name: "Side&Spin", port: Int32(localPort))
+        service = NetService(domain: "local", type: "\(serviceType).\(serviceProtocol)", name: "PaperBoyMultiplayer", port: Int32(localPort))
         service.delegate = self
         service.publish()
     }

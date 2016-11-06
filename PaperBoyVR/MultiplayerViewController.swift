@@ -18,7 +18,7 @@ class MultiplayerViewController: UIViewController, NetServiceBrowserDelegate, Ne
     var delegate: GameControllerDelegate?
     var autoConnect: Bool = true
     var ID: Int = 0
-    let serviceType = "_sidespin"
+    let serviceType = "_paperBoyMultiplayer"
     let serviceProtocol = "_tcp"
     var config = true
     
@@ -28,6 +28,7 @@ class MultiplayerViewController: UIViewController, NetServiceBrowserDelegate, Ne
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        delegate = self
         self.label.text = "Connecting to Apple TV."
         self.activityIndicator.startAnimating()
         startBrowsing()
@@ -62,7 +63,7 @@ class MultiplayerViewController: UIViewController, NetServiceBrowserDelegate, Ne
     
     //MARK: NSNetServiceBrowser delegates
     //TODO - fazer tentativas sucessivas de conexão
-    func netServiceBrowser(browser: NetServiceBrowser, didFindService service: NetService, moreComing: Bool) {
+    func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: NetService, moreComing: Bool) {
         services.add(service)
         
         if !moreComing {
@@ -78,17 +79,17 @@ class MultiplayerViewController: UIViewController, NetServiceBrowserDelegate, Ne
         }
     }
     
-    func netServiceBrowser(browser: NetServiceBrowser, didRemoveService service: NetService, moreComing: Bool) {
+    func netServiceBrowser(_ browser: NetServiceBrowser, didRemove service: NetService, moreComing: Bool) {
         self.services.remove(service)
         
         if !moreComing { delegate?.didRemoveGame(game: service) }
     }
     
-    func netServiceBrowserDidStopSearch(browser: NetServiceBrowser) {
+    func netServiceBrowserDidStopSearch(_ browser: NetServiceBrowser) {
         stopBrowsing()
     }
     
-    func netServiceBrowser(browser: NetServiceBrowser, didNotSearch errorDict: [String : NSNumber]) {
+    func netServiceBrowser(_ browser: NetServiceBrowser, didNotSearch errorDict: [String : NSNumber]) {
         stopBrowsing()
     }
     
@@ -162,12 +163,7 @@ class MultiplayerViewController: UIViewController, NetServiceBrowserDelegate, Ne
     
     func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
         print("Socket did connect to host:\(host) port:\(port)")
-        // TODO update view
-        // TODO update view
-        // TODO update view
-        // TODO update view
-        // TODO update view
-        // TODO update view
+        
         sock.readData(toLength: UInt(MemoryLayout<UInt64>.size), withTimeout: -1, tag: 0)
         guard let del = delegate?.didConnect else {print("didConnect doesn't exist on delegate"); return}
         del(host)
@@ -201,6 +197,26 @@ class MultiplayerViewController: UIViewController, NetServiceBrowserDelegate, Ne
             self.delegate?.didReceiveData(fromTV: hostName, data: data as NSData)
             sock.readData(toLength: UInt(data.count), withTimeout: -1, tag: 0)
         }
+    }
+}
+
+extension MultiplayerViewController: GameControllerDelegate {
+    
+    func didConnect(withTV TV: String) {
+        self.label.text = "waiting for game to start"
+        self.activityIndicator.stopAnimating()
+    }
+    
+    func didRemoveGame(game: NetService) {
+        
+    }
+    
+    func didFindGames(games: NSMutableArray!) {
+        
+    }
+    
+    func didReceiveData(fromTV TV: String, data: NSData) {
+        
     }
 }
 

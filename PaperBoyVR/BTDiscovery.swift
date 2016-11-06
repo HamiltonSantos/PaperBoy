@@ -28,7 +28,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate {
     func startScanning() {
         if(myDevice != nil)
         {
-            var myPeripherals = centralManager?.retrievePeripherals(withIdentifiers: [UUID(uuidString: myDevice!)!])
+            let myPeripherals = centralManager?.retrievePeripherals(withIdentifiers: [UUID(uuidString: myDevice!)!])
             if myPeripherals!.count >= 1 {
                 self.connectPeripheral(peripheral: myPeripherals!.first!)
             }
@@ -38,6 +38,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate {
             }
         }
     }
+    
     
     var bleService: BTService? {
         didSet {
@@ -66,6 +67,10 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate {
         
         // Stop scanning for new devices
         central.stopScan()
+    }
+    
+    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+        NSLog("failed to connect")
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
