@@ -10,10 +10,12 @@ import Foundation
 import CoreBluetooth
 
 /* Services & Characteristics UUIDs */
-let BLEServiceUUID = CBUUID(string: "1816")
-let WheelRevolutionCharUUID = CBUUID(string: "2A5B")
-let BLEServiceChangedStatusNotification = "kBLEServiceChangedStatusNotification"
-let myDevice:String? = "71165497-6DF9-4501-97A6-53B8F2092E28"
+let bLEServiceUUID = CBUUID(string: "1816")
+let wheelRevolutionCharUUID = CBUUID(string: "2A5B")
+let bLEServiceChangedStatusNotification = "kBLEServiceChangedStatusNotification"
+let updatedSpeedNotification = "kUpdatedSpeed"
+let myDevice:String? = nil// "71165497-6DF9-4501-97A6-53B8F2092E28" 
+                          // "71165497-6DF9-4501-97A6-53B8F2092E28"
 var speedCharacteristic: CBCharacteristic?
 
 class BTService: NSObject, CBPeripheralDelegate {
@@ -31,7 +33,7 @@ class BTService: NSObject, CBPeripheralDelegate {
     }
     
     func startDiscoveringServices() {
-        self.peripheral?.discoverServices([BLEServiceUUID])
+        self.peripheral?.discoverServices([bLEServiceUUID])
     }
     
     func reset() {
@@ -47,7 +49,7 @@ class BTService: NSObject, CBPeripheralDelegate {
     
     func  peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         
-        let uuidsForBTService: [CBUUID] = [WheelRevolutionCharUUID]
+        let uuidsForBTService: [CBUUID] = [wheelRevolutionCharUUID]
         
         if (peripheral != self.peripheral) {
             // Wrong Peripheral
@@ -64,7 +66,7 @@ class BTService: NSObject, CBPeripheralDelegate {
         }
         
         for service in peripheral.services! {
-            if service.uuid == BLEServiceUUID {
+            if service.uuid == bLEServiceUUID {
                 peripheral.discoverCharacteristics(uuidsForBTService, for: service)
             }
         }
@@ -83,7 +85,7 @@ class BTService: NSObject, CBPeripheralDelegate {
         
         if let characteristics = service.characteristics {
             for characteristic in characteristics {
-                if characteristic.uuid == WheelRevolutionCharUUID {
+                if characteristic.uuid == wheelRevolutionCharUUID {
                     speedCharacteristic = (characteristic)
                     peripheral.setNotifyValue(true, for: characteristic)
                     
@@ -96,16 +98,22 @@ class BTService: NSObject, CBPeripheralDelegate {
     
     
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
-        if characteristic.uuid == WheelRevolutionCharUUID {
+        if characteristic.uuid == wheelRevolutionCharUUID {
             NSLog("new value: \(characteristic.value?[1])")
+            self.sendBTServiceNotificationWithUpdatedSpeed(newSpeed: Double((characteristic.value?[1])!) )
         }
     }
     
     // Mark: - Private
     
+    func sendBTServiceNotificationWithUpdatedSpeed(newSpeed: Double) {
+        let speedInfoDictionary = ["speed": newSpeed]
+        NotificationCenter.default.post(name:Notification.Name(updatedSpeedNotification), object: self, userInfo: speedInfoDictionary)
+    }
+    
     func sendBTServiceNotificationWithIsBluetoothConnected(isBluetoothConnected: Bool) {
         let connectionDetails = ["isConnected": isBluetoothConnected]
-        NotificationCenter.default.post(name:Notification.Name(BLEServiceChangedStatusNotification), object: self, userInfo: connectionDetails)
+        NotificationCenter.default.post(name:Notification.Name(bLEServiceChangedStatusNotification), object: self, userInfo: connectionDetails)
     }
     
 }

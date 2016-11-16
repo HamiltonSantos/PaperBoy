@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Watch Bluetooth connection
-        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.connectionChanged(notification:)), name: Notification.Name(rawValue: BLEServiceChangedStatusNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.connectionChanged(notification:)), name: Notification.Name(rawValue: bLEServiceChangedStatusNotification), object: nil)
         
         // Start the Bluetooth discovery process
         btDiscoverySharedInstance

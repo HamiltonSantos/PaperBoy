@@ -34,7 +34,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate {
             }
         }else {
             if let central = centralManager {
-                central.scanForPeripherals(withServices: [BLEServiceUUID], options: nil)
+                central.scanForPeripherals(withServices: [bLEServiceUUID], options: nil)
             }
         }
     }

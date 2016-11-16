@@ -26,18 +26,26 @@ class VRGameViewController: TransparentNavBarViewController {
         
         gameController.playMusic()
         
-        DispatchQueue.global().async {
-            
-            self.throwNewspaper()
-            
-        }
+        self.readSpeed()
+        
+        self.throwNewspaper()
+        
     }
     
     func throwNewspaper() {
-        self.gameController.throwNewsPaper()
-        btDiscoverySharedInstance.peripherals.first?.readValue(for: speedCharacteristic!)
-        sleep(3)
-        self.throwNewspaper()
+        DispatchQueue.global().async {
+            self.gameController.throwNewspaper()
+            sleep(3)
+            self.throwNewspaper()
+        }
+    }
+    
+    func readSpeed() {
+        DispatchQueue.global().async {
+            self.gameController.readSpeed()
+            sleep(10)
+            self.readSpeed()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
