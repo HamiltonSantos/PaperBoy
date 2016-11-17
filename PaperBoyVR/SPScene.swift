@@ -22,12 +22,16 @@ class SPScene : NSObject {
     // Newspaper
     var newspaper: SCNNode!
     
+    // Bike
+    var bike: SCNNode!
+    
     
     override init() {
 
         // camera
         cameraNode = sharedScene.childNode("cameraNode")
         newspaper = sharedScene.childNode("newspaper")
+        bike = sharedScene.childNode("bike")
         
         // Initial Positions
 //        self.mySideInitialLeftPosition = sharedScene.childNode("mySideStartPointLeft").position

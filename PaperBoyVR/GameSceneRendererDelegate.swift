@@ -34,13 +34,14 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
             if let motion = motion {
                 let currentAttitude = motion.attitude
                 let cameraNode = self.gameScene.cameraNode
+                let bike = self.gameScene.bike
                 SCNTransaction.begin()
                 SCNTransaction.animationDuration = 0.05
                 
-                cameraNode!.eulerAngles.x = Float(currentAttitude.roll - 1.57)
-                cameraNode!.eulerAngles.z = Float(currentAttitude.pitch)
-                cameraNode!.eulerAngles.y = Float(currentAttitude.yaw)
-                cameraNode?.position.z = cameraNode!.position.z - 0.1
+                cameraNode!.eulerAngles.x = Float(currentAttitude.roll)
+                cameraNode!.eulerAngles.z = Float(currentAttitude.yaw)
+                cameraNode!.eulerAngles.y = Float(currentAttitude.pitch) * -1
+                bike!.position.z = bike!.position.z - 0.1
                 
                 SCNTransaction.commit()
             }
