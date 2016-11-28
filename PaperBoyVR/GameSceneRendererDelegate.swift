@@ -75,17 +75,17 @@ extension GameSceneRendererDelegate {
         let step:Float = 0.2
         let x:Float = 0.0
         let y:Float = 0.0
-        let z:Float = -step
+        let z:Float = step
         
-        var paperBoyTransform = self.paperBoyNode.transform
-        paperBoyTransform = SCNMatrix4Rotate(paperBoyTransform, currentPitch, 0.0, 1.0, 0.0);
+        var paperBoyPivot = self.paperBoyNode.pivot
+        paperBoyPivot = SCNMatrix4Rotate(paperBoyPivot, currentPitch, 0.0, -1.0, 0.0);
         
         let rotatedPosition = self.position(position: SCNVector3Make(x,y,z), multipliedByRotation: paperBoyNode.rotation)
-        paperBoyTransform = SCNMatrix4Translate(paperBoyTransform, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
+        paperBoyPivot = SCNMatrix4Translate(paperBoyPivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
         print(self.paperBoyNode.transform)
         
         
         
-        self.paperBoyNode.transform = paperBoyTransform
+        self.paperBoyNode.pivot = paperBoyPivot
     }
 }
