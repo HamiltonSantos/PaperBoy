@@ -16,6 +16,7 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
     var motionManager: CMMotionManager
     let gameScene = SPScene.sharedInstance
     static let sharedInstance = GameSceneRendererDelegate()
+    var paperBoyNode:SCNNode!
     
     override init() {
         motionManager = CMMotionManager()
@@ -34,14 +35,15 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
             if let motion = motion {
                 let currentAttitude = motion.attitude
                 let cameraNode = self.gameScene.cameraNode
-                let bike = self.gameScene.bike
+                self.paperBoyNode = self.gameScene.paperBoyNode
                 SCNTransaction.begin()
                 SCNTransaction.animationDuration = 0.05
+                cameraNode!.eulerAngles.x = Float(currentAttitude.roll) - Float(M_PI/2)
+                cameraNode!.eulerAngles.z = Float(currentAttitude.pitch)
+                cameraNode!.eulerAngles.y = Float(currentAttitude.yaw)
                 
-                cameraNode!.eulerAngles.x = Float(currentAttitude.roll)
-                cameraNode!.eulerAngles.z = Float(currentAttitude.yaw)
-                cameraNode!.eulerAngles.y = Float(currentAttitude.pitch) * -1
-                bike!.position.z = bike!.position.z - 0.1
+                //move bike forward
+                self.movePaperBoy(currentPitch: Float(currentAttitude.pitch)/30)
                 
                 SCNTransaction.commit()
             }
@@ -56,5 +58,34 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
         
         SCNTransaction.commit()
     }
+}
+
+extension GameSceneRendererDelegate {
+    func position(position:SCNVector3, multipliedByRotation rotation:SCNVector4) ->SCNVector3 {
+        if rotation.w == 0 {
+            return position
+        }
+        let gPosition = SCNVector3ToGLKVector3(position)
+        let gRotation = GLKMatrix4MakeRotation(rotation.w, rotation.x, rotation.y, rotation.z)
+        let r = GLKMatrix4MultiplyVector3(gRotation, gPosition)
+        return SCNVector3FromGLKVector3(r);
+    }
     
+    func movePaperBoy(currentPitch:Float) {
+        let step:Float = 0.2
+        let x:Float = 0.0
+        let y:Float = 0.0
+        let z:Float = -step
+        
+        var paperBoyTransform = self.paperBoyNode.transform
+        paperBoyTransform = SCNMatrix4Rotate(paperBoyTransform, currentPitch, 0.0, 1.0, 0.0);
+        
+        let rotatedPosition = self.position(position: SCNVector3Make(x,y,z), multipliedByRotation: paperBoyNode.rotation)
+        paperBoyTransform = SCNMatrix4Translate(paperBoyTransform, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
+        print(self.paperBoyNode.transform)
+        
+        
+        
+        self.paperBoyNode.transform = paperBoyTransform
+    }
 }

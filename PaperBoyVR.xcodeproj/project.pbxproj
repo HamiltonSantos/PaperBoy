@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25088BD71DA3DCE300164639 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BD51DA3DCE300164639 /* BTDiscovery.swift */; };
-		25088BD81DA3DCE300164639 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BD61DA3DCE300164639 /* BTService.swift */; };
 		25088BDB1DA7D0F700164639 /* BikesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BDA1DA7D0F700164639 /* BikesTableViewController.swift */; };
 		25088BDF1DB3D1B400164639 /* BikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25088BDE1DB3D1B400164639 /* BikeTableViewCell.swift */; };
 		251920C11D883921003C863C /* TransparentNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251920C01D883921003C863C /* TransparentNavBarViewController.swift */; };
@@ -20,6 +18,9 @@
 		2521F7E11D6A0A5700F796A2 /* SPScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2521F7E01D6A0A5700F796A2 /* SPScene.swift */; };
 		2521F7E41D6A0AE100F796A2 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2521F7E31D6A0AE100F796A2 /* art.scnassets */; };
 		252D08F31DC0D6AF009D544D /* GameControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D08F21DC0D6AF009D544D /* GameControllerManager.swift */; };
+		253EF0AE1DE9F563009A89C1 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EF0AB1DE9F563009A89C1 /* BluetoothManager.swift */; };
+		253EF0AF1DE9F563009A89C1 /* CadenceSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EF0AC1DE9F563009A89C1 /* CadenceSensor.swift */; };
+		253EF0B01DE9F563009A89C1 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EF0AD1DE9F563009A89C1 /* Measurement.swift */; };
 		25BEE2B21D8AD9330069C658 /* SPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BEE2B11D8AD9330069C658 /* SPController.swift */; };
 		25D79F4C1D8F3F4D00E1A587 /* VRGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D79F4B1D8F3F4D00E1A587 /* VRGameViewController.swift */; };
 		25D79F4E1D8F4B9300E1A587 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D79F4D1D8F4B9300E1A587 /* SCNVector3Extensions.swift */; };
@@ -40,8 +41,6 @@
 /* Begin PBXFileReference section */
 		0D7240CC21F67B6A459B6263 /* Pods-PaperBoyMultiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperBoyMultiplayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer.release.xcconfig"; sourceTree = "<group>"; };
 		11130E16FB8A27481A11046D /* Pods-PaperBoyMultiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperBoyMultiplayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer.debug.xcconfig"; sourceTree = "<group>"; };
-		25088BD51DA3DCE300164639 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
-		25088BD61DA3DCE300164639 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
 		25088BDA1DA7D0F700164639 /* BikesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikesTableViewController.swift; sourceTree = "<group>"; };
 		25088BDE1DB3D1B400164639 /* BikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeTableViewCell.swift; sourceTree = "<group>"; };
 		251920C01D883921003C863C /* TransparentNavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentNavBarViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +53,11 @@
 		2521F7DE1D6A075400F796A2 /* GameSceneRendererDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneRendererDelegate.swift; sourceTree = "<group>"; };
 		2521F7E01D6A0A5700F796A2 /* SPScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPScene.swift; sourceTree = "<group>"; };
 		2521F7E31D6A0AE100F796A2 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		252D08F21DC0D6AF009D544D /* GameControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControllerManager.swift; sourceTree = "<group>"; };
+		252D08F21DC0D6AF009D544D /* GameControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameControllerManager.swift; path = ../PaperBoyMultiplayer/GameControllerManager.swift; sourceTree = "<group>"; };
 		253854AB1DC75F1600B68119 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "Pods/../build/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
+		253EF0AB1DE9F563009A89C1 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		253EF0AC1DE9F563009A89C1 /* CadenceSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadenceSensor.swift; sourceTree = "<group>"; };
+		253EF0AD1DE9F563009A89C1 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		25BEE2B11D8AD9330069C658 /* SPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPController.swift; sourceTree = "<group>"; };
 		25D79F4B1D8F3F4D00E1A587 /* VRGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRGameViewController.swift; sourceTree = "<group>"; };
 		25D79F4D1D8F4B9300E1A587 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
@@ -63,9 +65,9 @@
 		25DC66431DC6730000202C6B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		25DC66461DC6761200202C6B /* MultiplayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
 		25E046A41D92C3CE00958130 /* PaperBoyMultiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperBoyMultiplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25E046A61D92C3CE00958130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25E046A61D92C3CE00958130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../PaperBoyMultiplayer/AppDelegate.swift; sourceTree = "<group>"; };
 		25E046A81D92C3CE00958130 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		25E046AA1D92C3CE00958130 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		25E046AA1D92C3CE00958130 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../PaperBoyMultiplayer/GameViewController.swift; sourceTree = "<group>"; };
 		25E046AD1D92C3CE00958130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25E046AF1D92C3CE00958130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25E046B11D92C3CE00958130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,19 +102,20 @@
 		25088BD41DA3DCB700164639 /* BlueTooth */ = {
 			isa = PBXGroup;
 			children = (
-				25088BD51DA3DCE300164639 /* BTDiscovery.swift */,
-				25088BD61DA3DCE300164639 /* BTService.swift */,
+				253EF0AB1DE9F563009A89C1 /* BluetoothManager.swift */,
+				253EF0AC1DE9F563009A89C1 /* CadenceSensor.swift */,
+				253EF0AD1DE9F563009A89C1 /* Measurement.swift */,
 			);
 			name = BlueTooth;
 			sourceTree = "<group>";
 		};
-		25088BD91DA7CB7700164639 /* Bike Connection */ = {
+		25088BD91DA7CB7700164639 /* BikeList */ = {
 			isa = PBXGroup;
 			children = (
 				25088BDA1DA7D0F700164639 /* BikesTableViewController.swift */,
 				25088BDE1DB3D1B400164639 /* BikeTableViewCell.swift */,
 			);
-			name = "Bike Connection";
+			name = BikeList;
 			sourceTree = "<group>";
 		};
 		2521F7C01D65E85B00F796A2 = {
@@ -138,27 +141,62 @@
 		2521F7CB1D65E85B00F796A2 /* PaperBoyVR */ = {
 			isa = PBXGroup;
 			children = (
+				25509C221DECB166004D6E4D /* App */,
+				25509C211DECB123004D6E4D /* Helpers */,
+				25509C201DECB108004D6E4D /* Game */,
+				25509C1F1DECB0EF004D6E4D /* Main */,
 				25DC66451DC675FA00202C6B /* Multiplayer */,
 				25DC66421DC672AF00202C6B /* Model */,
-				25088BD91DA7CB7700164639 /* Bike Connection */,
+				25088BD91DA7CB7700164639 /* BikeList */,
 				25088BD41DA3DCB700164639 /* BlueTooth */,
 				2521F7CC1D65E85B00F796A2 /* AppDelegate.swift */,
 				2521F7D01D65E85B00F796A2 /* Main.storyboard */,
 				2521F7D31D65E85B00F796A2 /* Assets.xcassets */,
 				2521F7D51D65E85B00F796A2 /* LaunchScreen.storyboard */,
 				2521F7D81D65E85B00F796A2 /* Info.plist */,
-				2521F7DE1D6A075400F796A2 /* GameSceneRendererDelegate.swift */,
-				2521F7E01D6A0A5700F796A2 /* SPScene.swift */,
-				25EC54281D746B3700448ED2 /* SCNSceneExtensions.swift */,
 				2521F7E31D6A0AE100F796A2 /* art.scnassets */,
-				25EC542A1D78617B00448ED2 /* GameSceneView.swift */,
-				251920C01D883921003C863C /* TransparentNavBarViewController.swift */,
-				25BEE2B11D8AD9330069C658 /* SPController.swift */,
-				25D79F4B1D8F3F4D00E1A587 /* VRGameViewController.swift */,
-				25D79F4D1D8F4B9300E1A587 /* SCNVector3Extensions.swift */,
-				25DC66401DC66E0E00202C6B /* MainViewController.swift */,
 			);
 			path = PaperBoyVR;
+			sourceTree = "<group>";
+		};
+		25509C1F1DECB0EF004D6E4D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25DC66401DC66E0E00202C6B /* MainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		25509C201DECB108004D6E4D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				25E046AA1D92C3CE00958130 /* GameViewController.swift */,
+				2521F7E01D6A0A5700F796A2 /* SPScene.swift */,
+				2521F7DE1D6A075400F796A2 /* GameSceneRendererDelegate.swift */,
+				25EC542A1D78617B00448ED2 /* GameSceneView.swift */,
+				25BEE2B11D8AD9330069C658 /* SPController.swift */,
+				25D79F4B1D8F3F4D00E1A587 /* VRGameViewController.swift */,
+				252D08F21DC0D6AF009D544D /* GameControllerManager.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		25509C211DECB123004D6E4D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				25D79F4D1D8F4B9300E1A587 /* SCNVector3Extensions.swift */,
+				251920C01D883921003C863C /* TransparentNavBarViewController.swift */,
+				25EC54281D746B3700448ED2 /* SCNSceneExtensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		25509C221DECB166004D6E4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				25E046A61D92C3CE00958130 /* AppDelegate.swift */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 		25DC66421DC672AF00202C6B /* Model */ = {
@@ -180,10 +218,7 @@
 		25E046A51D92C3CE00958130 /* PaperBoyMultiplayer */ = {
 			isa = PBXGroup;
 			children = (
-				252D08F21DC0D6AF009D544D /* GameControllerManager.swift */,
-				25E046A61D92C3CE00958130 /* AppDelegate.swift */,
 				25E046A81D92C3CE00958130 /* art.scnassets */,
-				25E046AA1D92C3CE00958130 /* GameViewController.swift */,
 				25E046AC1D92C3CE00958130 /* Main.storyboard */,
 				25E046AF1D92C3CE00958130 /* Assets.xcassets */,
 				25E046B11D92C3CE00958130 /* Info.plist */,
@@ -419,20 +454,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D79F4E1D8F4B9300E1A587 /* SCNVector3Extensions.swift in Sources */,
+				253EF0AF1DE9F563009A89C1 /* CadenceSensor.swift in Sources */,
 				25DC66471DC6761200202C6B /* MultiplayerViewController.swift in Sources */,
 				25088BDF1DB3D1B400164639 /* BikeTableViewCell.swift in Sources */,
 				251920C11D883921003C863C /* TransparentNavBarViewController.swift in Sources */,
 				25EC542B1D78617B00448ED2 /* GameSceneView.swift in Sources */,
 				2521F7E11D6A0A5700F796A2 /* SPScene.swift in Sources */,
-				25088BD81DA3DCE300164639 /* BTService.swift in Sources */,
+				253EF0AE1DE9F563009A89C1 /* BluetoothManager.swift in Sources */,
 				2521F7DF1D6A075400F796A2 /* GameSceneRendererDelegate.swift in Sources */,
 				25DC66411DC66E0E00202C6B /* MainViewController.swift in Sources */,
 				25DC66441DC6730000202C6B /* User.swift in Sources */,
 				2521F7CD1D65E85B00F796A2 /* AppDelegate.swift in Sources */,
-				25088BD71DA3DCE300164639 /* BTDiscovery.swift in Sources */,
 				25BEE2B21D8AD9330069C658 /* SPController.swift in Sources */,
 				25D79F4C1D8F3F4D00E1A587 /* VRGameViewController.swift in Sources */,
 				25088BDB1DA7D0F700164639 /* BikesTableViewController.swift in Sources */,
+				253EF0B01DE9F563009A89C1 /* Measurement.swift in Sources */,
 				25EC54291D746B3700448ED2 /* SCNSceneExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +616,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -594,6 +631,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

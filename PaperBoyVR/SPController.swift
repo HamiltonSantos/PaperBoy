@@ -29,7 +29,8 @@ extension SPController {
     
     func throwNewspaper() {
         
-        let nPPosition = self.sPScene.cameraNode.position
+        var nPPosition = self.sPScene.paperBoyNode.position
+        nPPosition.z = 3
         self.sPScene.newspaper.position = nPPosition
         let vector = SCNVector3Make(-self.sPScene.cameraNode.eulerAngles.y, self.sPScene.cameraNode.eulerAngles.x + 0.2, -0.8) * 10// sPScene.cameraNode.eulerAngles
         self.throwNewspaper(vectorForce: vector)
@@ -64,12 +65,5 @@ extension SPController {
     func resetVelocity(node: SCNNode) {
         node.physicsBody?.velocity = SCNVector3Zero
         node.physicsBody?.angularVelocity = SCNVector4Zero
-    }
-}
-
-//BLE CSC device
-extension SPController {
-    func readSpeed() {
-        btDiscoverySharedInstance.peripherals.first?.readValue(for: speedCharacteristic!)
     }
 }
