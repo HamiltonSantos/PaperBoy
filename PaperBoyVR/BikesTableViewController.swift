@@ -15,6 +15,8 @@ class BikesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btManagerSharedInstance.bluetoothListDelegate = self
+        btManagerSharedInstance.startScan()
         
     }
     
@@ -53,7 +55,18 @@ class BikesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        btManagerSharedInstance.connectToSensor(self.sensors[indexPath.row])
+        let sensor = self.sensors[indexPath.row]
+        btManagerSharedInstance.connectToSensor(sensor)
+        // Save the sensor ID
+        UserDefaults.standard.set(sensor.peripheral.identifier.uuidString, forKey: Constants.SensorUserDefaultsKey)
+        UserDefaults.standard.synchronize()
+    }
+}
+
+extension BikesTableViewController : BluetoothSensorListDelegate {
+    func sensorDiscovered(_ sensor: CadenceSensor) {
+        self.sensors = btManagerSharedInstance.sensors
+        self.tableView.reloadData()
     }
 }
 

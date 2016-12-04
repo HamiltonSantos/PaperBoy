@@ -30,9 +30,9 @@ extension SPController {
     func throwNewspaper() {
         
         var nPPosition = self.sPScene.paperBoyNode.position
-        nPPosition.z = 3
+        nPPosition.y = 4
         self.sPScene.newspaper.position = nPPosition
-        let vector = SCNVector3Make(-self.sPScene.cameraNode.eulerAngles.y, self.sPScene.cameraNode.eulerAngles.x + 0.2, -0.8) * 10// sPScene.cameraNode.eulerAngles
+        let vector = SCNVector3Make(-self.sPScene.cameraNode.eulerAngles.y,0,-Float(M_PI/2))*10// sPScene.cameraNode.eulerAngles
         self.throwNewspaper(vectorForce: vector)
         
     }

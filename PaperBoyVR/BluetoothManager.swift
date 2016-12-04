@@ -14,9 +14,12 @@ let btManagerSharedInstance = BluetoothManager()
 protocol BluetoothManagerDelegate {
     
     func stateChanged(_ state:CBCentralManagerState)
-    func sensorDiscovered( _ sensor:CadenceSensor )
     func sensorConnection( _ sensor:CadenceSensor, error:NSError?)
     func sensorDisconnected( _ sensor:CadenceSensor, error:NSError?)
+}
+
+protocol BluetoothSensorListDelegate: class {
+    func sensorDiscovered( _ sensor:CadenceSensor )
 }
 
 
@@ -24,9 +27,11 @@ protocol BluetoothManagerDelegate {
 class BluetoothManager:NSObject {
     
     var sensor:CadenceSensor?
+    var sensors:[CadenceSensor] = []
     
     let bluetoothCentral:CBCentralManager
     var bluetoothDelegate:BluetoothManagerDelegate?
+    weak var bluetoothListDelegate:BluetoothSensorListDelegate?
     let servicesToScan = [CBUUID(string: BTConstants.CadenceService)]
     
     override init()
@@ -60,7 +65,7 @@ class BluetoothManager:NSObject {
     func disconnectSensor() {
         if let sensor = self.sensor {
             bluetoothCentral.cancelPeripheralConnection(sensor.peripheral)
-            self.sensor = nil
+//            self.sensor = nil
         }
     }
     
@@ -86,7 +91,8 @@ extension BluetoothManager:CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         print("Peripeherals")
         let sensor = CadenceSensor(peripheral: peripheral)
-        bluetoothDelegate?.sensorDiscovered(sensor)
+        self.sensors.append(sensor)
+        bluetoothListDelegate?.sensorDiscovered(sensor)
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {

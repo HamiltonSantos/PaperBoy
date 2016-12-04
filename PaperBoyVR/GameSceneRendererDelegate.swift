@@ -17,6 +17,9 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
     let gameScene = SPScene.sharedInstance
     static let sharedInstance = GameSceneRendererDelegate()
     var paperBoyNode:SCNNode!
+    var currentSpeed:Double = 0
+    var crosshairDelegate:CrosshairDelegate?
+    var currentCrosshairSize:CGFloat = 1.0
     
     override init() {
         motionManager = CMMotionManager()
@@ -55,37 +58,55 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
         
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0
-        
-        SCNTransaction.commit()
+        if let view = aRenderer as? GameSceneView, view.isDelegate {
+            if let mailbox = view.hitTest(view.hitTestPoint, options: nil).first?.node,
+                mailbox.name == "Box001" {
+                currentCrosshairSize -= 0.025
+                print(currentCrosshairSize)
+                if currentCrosshairSize < 0.2 {
+                    self.currentCrosshairSize = 1.0
+                    self.crosshairDelegate?.throwNewspaperAction()
+                }
+                self.crosshairDelegate?.resizeCrosshair(size: currentCrosshairSize)
+            }
+            
+            SCNTransaction.commit()
+        }
     }
 }
 
-extension GameSceneRendererDelegate {
-    func position(position:SCNVector3, multipliedByRotation rotation:SCNVector4) ->SCNVector3 {
-        if rotation.w == 0 {
-            return position
+    extension GameSceneRendererDelegate {
+        func position(position:SCNVector3, multipliedByRotation rotation:SCNVector4) ->SCNVector3 {
+            if rotation.w == 0 {
+                return position
+            }
+            let gPosition = SCNVector3ToGLKVector3(position)
+            let gRotation = GLKMatrix4MakeRotation(rotation.w, rotation.x, rotation.y, rotation.z)
+            let r = GLKMatrix4MultiplyVector3(gRotation, gPosition)
+            return SCNVector3FromGLKVector3(r);
         }
-        let gPosition = SCNVector3ToGLKVector3(position)
-        let gRotation = GLKMatrix4MakeRotation(rotation.w, rotation.x, rotation.y, rotation.z)
-        let r = GLKMatrix4MultiplyVector3(gRotation, gPosition)
-        return SCNVector3FromGLKVector3(r);
+        
+        func movePaperBoy(currentPitch:Float) {
+            let step:Float = Float(currentSpeed/100.0)
+            let x:Float = 0.0
+            let y:Float = 0.0
+            let z:Float = step
+            var paperBoyPivot = self.paperBoyNode.pivot
+            
+            if abs(currentPitch) > 0.005 {
+                paperBoyPivot = SCNMatrix4Rotate(paperBoyPivot, currentPitch, 0.0, -1.0, 0.0)
+            }
+            
+            let rotatedPosition = self.position(position: SCNVector3Make(x,y,z), multipliedByRotation: paperBoyNode.rotation)
+            paperBoyPivot = SCNMatrix4Translate(paperBoyPivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
+            
+            
+            
+            self.paperBoyNode.pivot = paperBoyPivot
+        }
     }
     
-    func movePaperBoy(currentPitch:Float) {
-        let step:Float = 0.2
-        let x:Float = 0.0
-        let y:Float = 0.0
-        let z:Float = step
-        
-        var paperBoyPivot = self.paperBoyNode.pivot
-        paperBoyPivot = SCNMatrix4Rotate(paperBoyPivot, currentPitch, 0.0, -1.0, 0.0);
-        
-        let rotatedPosition = self.position(position: SCNVector3Make(x,y,z), multipliedByRotation: paperBoyNode.rotation)
-        paperBoyPivot = SCNMatrix4Translate(paperBoyPivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
-        print(self.paperBoyNode.transform)
-        
-        
-        
-        self.paperBoyNode.pivot = paperBoyPivot
-    }
+    protocol CrosshairDelegate: class {
+        func resizeCrosshair(size:CGFloat)
+        func throwNewspaperAction()
 }

@@ -65,9 +65,9 @@
 		25DC66431DC6730000202C6B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		25DC66461DC6761200202C6B /* MultiplayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
 		25E046A41D92C3CE00958130 /* PaperBoyMultiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperBoyMultiplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25E046A61D92C3CE00958130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../PaperBoyMultiplayer/AppDelegate.swift; sourceTree = "<group>"; };
+		25E046A61D92C3CE00958130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25E046A81D92C3CE00958130 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		25E046AA1D92C3CE00958130 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../PaperBoyMultiplayer/GameViewController.swift; sourceTree = "<group>"; };
+		25E046AA1D92C3CE00958130 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		25E046AD1D92C3CE00958130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25E046AF1D92C3CE00958130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25E046B11D92C3CE00958130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,13 +109,13 @@
 			name = BlueTooth;
 			sourceTree = "<group>";
 		};
-		25088BD91DA7CB7700164639 /* BikeList */ = {
+		25088BD91DA7CB7700164639 /* SensorList */ = {
 			isa = PBXGroup;
 			children = (
 				25088BDA1DA7D0F700164639 /* BikesTableViewController.swift */,
 				25088BDE1DB3D1B400164639 /* BikeTableViewCell.swift */,
 			);
-			name = BikeList;
+			name = SensorList;
 			sourceTree = "<group>";
 		};
 		2521F7C01D65E85B00F796A2 = {
@@ -141,18 +141,16 @@
 		2521F7CB1D65E85B00F796A2 /* PaperBoyVR */ = {
 			isa = PBXGroup;
 			children = (
+				25DC66451DC675FA00202C6B /* Multiplayer */,
+				25509C231DECF926004D6E4D /* Storyboard */,
 				25509C221DECB166004D6E4D /* App */,
 				25509C211DECB123004D6E4D /* Helpers */,
 				25509C201DECB108004D6E4D /* Game */,
 				25509C1F1DECB0EF004D6E4D /* Main */,
-				25DC66451DC675FA00202C6B /* Multiplayer */,
 				25DC66421DC672AF00202C6B /* Model */,
-				25088BD91DA7CB7700164639 /* BikeList */,
+				25088BD91DA7CB7700164639 /* SensorList */,
 				25088BD41DA3DCB700164639 /* BlueTooth */,
-				2521F7CC1D65E85B00F796A2 /* AppDelegate.swift */,
-				2521F7D01D65E85B00F796A2 /* Main.storyboard */,
 				2521F7D31D65E85B00F796A2 /* Assets.xcassets */,
-				2521F7D51D65E85B00F796A2 /* LaunchScreen.storyboard */,
 				2521F7D81D65E85B00F796A2 /* Info.plist */,
 				2521F7E31D6A0AE100F796A2 /* art.scnassets */,
 			);
@@ -170,7 +168,6 @@
 		25509C201DECB108004D6E4D /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				25E046AA1D92C3CE00958130 /* GameViewController.swift */,
 				2521F7E01D6A0A5700F796A2 /* SPScene.swift */,
 				2521F7DE1D6A075400F796A2 /* GameSceneRendererDelegate.swift */,
 				25EC542A1D78617B00448ED2 /* GameSceneView.swift */,
@@ -194,9 +191,18 @@
 		25509C221DECB166004D6E4D /* App */ = {
 			isa = PBXGroup;
 			children = (
-				25E046A61D92C3CE00958130 /* AppDelegate.swift */,
+				2521F7CC1D65E85B00F796A2 /* AppDelegate.swift */,
 			);
 			name = App;
+			sourceTree = "<group>";
+		};
+		25509C231DECF926004D6E4D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2521F7D51D65E85B00F796A2 /* LaunchScreen.storyboard */,
+				2521F7D01D65E85B00F796A2 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		25DC66421DC672AF00202C6B /* Model */ = {
@@ -218,6 +224,8 @@
 		25E046A51D92C3CE00958130 /* PaperBoyMultiplayer */ = {
 			isa = PBXGroup;
 			children = (
+				25E046AA1D92C3CE00958130 /* GameViewController.swift */,
+				25E046A61D92C3CE00958130 /* AppDelegate.swift */,
 				25E046A81D92C3CE00958130 /* art.scnassets */,
 				25E046AC1D92C3CE00958130 /* Main.storyboard */,
 				25E046AF1D92C3CE00958130 /* Assets.xcassets */,

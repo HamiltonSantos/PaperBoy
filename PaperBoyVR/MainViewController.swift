@@ -9,13 +9,16 @@
 import UIKit
 import CoreBluetooth
 
+struct Constants {
+    
+    static let ScanSegue = "ScanSegue"
+    static let SensorUserDefaultsKey = "lastsensorused"
+}
+
 class MainViewController: TransparentNavBarViewController {
 
-    struct Constants {
-        
-        static let ScanSegue = "ScanSegue"
-        static let SensorUserDefaultsKey = "lastsensorused"
-    }
+    @IBOutlet weak var connectToBikeButton: UIButton!
+    @IBOutlet weak var currentSensorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +77,7 @@ extension MainViewController: BluetoothManagerDelegate {
             title = "Bluetooth not supported"
         }
         //        infoViewController?.showBluetoothStatusText( title )
-        //        scanItem.isEnabled = enabled
+                connectToBikeButton.isEnabled = enabled
     }
     
     
@@ -92,13 +95,14 @@ extension MainViewController: BluetoothManagerDelegate {
     }
     
     func checkPreviousSensor() {
-        
+        self.currentSensorLabel.text = "No sensor connected"
         guard let sensorID = UserDefaults.standard.object(forKey: Constants.SensorUserDefaultsKey)  as? String else {
             return
         }
         guard let sensor = btManagerSharedInstance.retrieveSensorWithIdentifier(sensorID) else {
             return
         }
+        self.currentSensorLabel.text = "connected to \(sensor.peripheral.name!)-\(sensor.peripheral.identifier)"
         btManagerSharedInstance.sensor = sensor
         btManagerSharedInstance.connectToSensor(sensor)
         

@@ -19,6 +19,8 @@ class VRGameViewController: TransparentNavBarViewController {
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var cadenceLabel: UILabel!
+    @IBOutlet weak var crosshairSizeConstraint: NSLayoutConstraint!
+    let initialCrosshairSize:CGFloat = 50.0
     
     lazy var distanceFormatter:LengthFormatter = {
         
@@ -37,26 +39,16 @@ class VRGameViewController: TransparentNavBarViewController {
         
         gameController.playMusic()
         
-        self.readSpeed()
+        GameSceneRendererDelegate.sharedInstance.crosshairDelegate = self
         
-        self.throwNewspaper()
+        btManagerSharedInstance.sensor?.sensorDelegate = self
+        
         
     }
     
     func throwNewspaper() {
-        DispatchQueue.global().async {
-            self.gameController.throwNewspaper()
-            sleep(3)
-            self.throwNewspaper()
-        }
-    }
-    
-    func readSpeed() {
-        DispatchQueue.global().async {
-//            self.gameController.readSpeed()
-            sleep(10)
-            self.readSpeed()
-        }
+        self.gameController.throwNewspaper()
+        resizeCrosshair(size: 1.0)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -78,27 +70,31 @@ extension VRGameViewController : CadenceSensorDelegate {
         accumulatedDistance = 0.0
     }
     
-    func updateSensorInfo() {
-        let name = btManagerSharedInstance.sensor?.peripheral.name ?? ""
-        let uuid = btManagerSharedInstance.sensor?.peripheral.identifier.uuidString ?? ""
-        
-//        OperationQueue.main.addOperation { () -> Void in
-//            self.infoViewController?.showDeviceName(name , uuid:uuid )
-//        }
-    }
-    
-    
     func sensorUpdatedValues( speedInMetersPerSecond speed:Double?, cadenceInRpm cadence:Double?, distanceInMeters distance:Double? ) {
         
         accumulatedDistance? += distance ?? 0
         let distanceText = (accumulatedDistance != nil && accumulatedDistance! >= 1.0) ? distanceFormatter.string(fromMeters: accumulatedDistance!) : "N/A"
-        let speedText = (speed != nil) ? distanceFormatter.string(fromValue: speed!*3.6, unit: .kilometer) + NSLocalizedString("/h", comment:"(km) Per hour") : "N/A"
-        let cadenceText = (cadence != nil) ? String(format: "%.2f %@",  cadence!, NSLocalizedString("RPM", comment:"Revs per minute") ) : "N/A"
+        let speedText = (speed != nil) ? distanceFormatter.string(fromValue: speed!*3.6, unit: .kilometer) : "N/A"
+        let cadenceText = (cadence != nil) ? String(format: "%.0f",  cadence!) : "N/A"
         
         distanceLabel.text = distanceText
         cadenceLabel.text = cadenceText
         speedLabel.text = speedText
+        
+        GameSceneRendererDelegate.sharedInstance.currentSpeed = cadence ?? 0
+    }
+}
+
+extension VRGameViewController: CrosshairDelegate {
+    func resizeCrosshair(size: CGFloat) {
+        if size > 0.2 {
+            DispatchQueue.main.async {
+                self.crosshairSizeConstraint.constant = size*self.initialCrosshairSize
+            }
+        }
     }
     
-    
+    func throwNewspaperAction () {
+        self.throwNewspaper()
+    }
 }
