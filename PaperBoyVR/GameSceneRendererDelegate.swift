@@ -87,7 +87,7 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
         }
         
         func movePaperBoy(currentPitch:Float) {
-            let step:Float = Float(currentSpeed/100.0)
+            let step:Float = Float(currentSpeed/300.0)
             let x:Float = 0.0
             let y:Float = 0.0
             let z:Float = step
