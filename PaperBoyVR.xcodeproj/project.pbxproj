@@ -621,7 +621,7 @@
 				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				INFOPLIST_FILE = PaperBoyVR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -636,7 +636,7 @@
 				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				INFOPLIST_FILE = PaperBoyVR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

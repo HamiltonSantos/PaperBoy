@@ -28,12 +28,39 @@ class SPController: NSObject {
 extension SPController {
     
     func throwNewspaper() {
+        ///////////////////////////////////////////////////////////
+//        //get hero direction vector
+//        let angle = heroNode.presentationNode.rotation.w * heroNode.presentationNode.rotation.y
+//        var direction = SCNVector3(x: -sin(angle), y: 0, z: -cos(angle))
+//        
+//        //get elevation
+//        direction = SCNVector3(x: cos(elevation) * direction.x, y: sin(elevation), z: cos(elevation) * direction.z)
+//        
+//        //create or recycle bullet node
+//        let bulletNode: SCNNode = {
+//            if self.bullets.count < self.maxBullets {
+//                return SCNNode()
+//            } else {
+//                return self.bullets.removeAtIndex(0)
+//            }
+//        }()
+//        bullets.append(bulletNode)
+//        bulletNode.geometry = SCNBox(width: CGFloat(bulletRadius) * 2, height: CGFloat(bulletRadius) * 2, length: CGFloat(bulletRadius) * 2, chamferRadius: CGFloat(bulletRadius))
+//        bulletNode.position = SCNVector3(x: heroNode.presentationNode.position.x, y: 0.4, z: heroNode.presentationNode.position.z)
+//        bulletNode.physicsBody = SCNPhysicsBody(type: .Dynamic, shape: SCNPhysicsShape(geometry: bulletNode.geometry!, options: nil))
+//        bulletNode.physicsBody?.categoryBitMask = CollisionCategory.Bullet
+//        bulletNode.physicsBody?.collisionBitMask = CollisionCategory.All ^ CollisionCategory.Hero
+//        bulletNode.physicsBody?.velocityFactor = SCNVector3(x: 1, y: 0.5, z: 1)
+//        self.sceneView.scene!.rootNode.addChildNode(bulletNode)
+        ///////////////////////////////////////////////////////////
+        let bikeRotation = self.sPScene.paperBoyNode.presentation.rotation
+        let cameraRotation = self.sPScene.cameraNode.presentation.rotation
+        var direction = SCNVector4Make(bikeRotation.x * cameraRotation.x, bikeRotation.y * cameraRotation.y, bikeRotation.z * cameraRotation.z, bikeRotation.w * cameraRotation.w)
         
-        var nPPosition = self.sPScene.paperBoyNode.position
-        nPPosition.y = 4
-        self.sPScene.newspaper.position = nPPosition
-        let vector = SCNVector3Make(-self.sPScene.cameraNode.eulerAngles.y,0,-Float(M_PI/2))*10// sPScene.cameraNode.eulerAngles
-        self.throwNewspaper(vectorForce: vector)
+        
+        
+        self.sPScene.newspaper.position = SCNVector3Make(self.sPScene.paperBoyNode.position.x, self.sPScene.paperBoyNode.position.y + 4, self.sPScene.paperBoyNode.position.z)
+        self.throwNewspaper(vectorForce: direction) bubugubugubug
         
     }
     
