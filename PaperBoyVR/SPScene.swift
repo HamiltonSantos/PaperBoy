@@ -16,11 +16,9 @@ class SPScene : NSObject {
     let sharedScene = SCNScene(named: "art.scnassets/SPScene.scn")!
     
     
-    // Camera Node
     var cameraNode: SCNNode!
-    
-    // Newspaper
     var newspaper: SCNNode!
+    var paperBoyNode: SCNNode!
     
     
     override init() {
@@ -28,15 +26,8 @@ class SPScene : NSObject {
         // camera
         cameraNode = sharedScene.childNode("cameraNode")
         newspaper = sharedScene.childNode("newspaper")
+        paperBoyNode = sharedScene.childNode("paperBoyNode")
         
-        // Initial Positions
-//        self.mySideInitialLeftPosition = sharedScene.childNode("mySideStartPointLeft").position
-//        self.mySideInitialRightPosition = sharedScene.childNode("mySideStartPointRight").position
-//        self.mySideInitialCenterPosition = sharedScene.childNode("mySideStartPointCenter").position
-//        
-//        self.otherSideInitialLeftPosition = sharedScene.childNode("otherSideStartPointLeft").position
-//        self.otherSideInitialRightPosition = sharedScene.childNode("otherSideStartPointRight").position
-//        self.otherSideInitialCenterPosition = sharedScene.childNode("otherSideStartPointCenter").position
         sharedScene.background.contents = UIImage(named: "sky")
     }
     

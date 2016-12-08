@@ -7,38 +7,17 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        // Watch Bluetooth connection
-        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.connectionChanged(notification:)), name: Notification.Name(rawValue: BLEServiceChangedStatusNotification), object: nil)
-        
-        // Start the Bluetooth discovery process
-        btDiscoverySharedInstance
+        UIApplication.shared.isIdleTimerDisabled = true
         return true
-    }
-
-    func connectionChanged(notification: NSNotification) {
-        // Connection status changed. Indicate on GUI.
-        let userInfo = notification.userInfo as! [String: Bool]
-        
-        DispatchQueue.main.async {
-            // Set image based on connection status
-            if let isConnected: Bool = userInfo["isConnected"] {
-                if isConnected {
-                    NSLog("Connected BLE")
-                } else {
-                    NSLog("Disconnected BLE")
-                }
-            }
-        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -49,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        disconnectSensor()
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -62,7 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func disconnectSensor( ) {
+        btManagerSharedInstance.disconnectSensor()
+    }
 }
-

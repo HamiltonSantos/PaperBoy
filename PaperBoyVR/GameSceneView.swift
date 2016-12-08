@@ -13,10 +13,12 @@ class GameSceneView: SCNView {
     
     @IBInspectable var cameraName: String = "centerCamera"
     @IBInspectable var isDelegate : Bool = false
+    var hitTestPoint: CGPoint = CGPoint(x: 0, y: 0)
     
     override func awakeFromNib() {
         // create a new scene
         super.awakeFromNib()
+        self.hitTestPoint = CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2)
         preferredFramesPerSecond = 30
         self.scene = SPScene.sharedInstance.sharedScene
         
