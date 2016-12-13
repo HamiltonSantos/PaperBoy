@@ -24,11 +24,16 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
     override init() {
         motionManager = CMMotionManager()
         super.init()
+        
+        
+        
+        
         initCamera()
     }
     
     func initCamera() {
         // Respond to user head movement
+        
         
         motionManager.deviceMotionUpdateInterval = 1.0 / 60
         motionManager.startDeviceMotionUpdates(using: CMAttitudeReferenceFrame.xArbitraryZVertical)
@@ -61,7 +66,7 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
         if let view = aRenderer as? GameSceneView, view.isDelegate {
             if let mailbox = view.hitTest(view.hitTestPoint, options: nil).first?.node,
                 mailbox.name == "Box001" {
-                currentCrosshairSize -= 0.025
+                currentCrosshairSize -= 0.015
                 print(currentCrosshairSize)
                 if currentCrosshairSize < 0.2 {
                     self.currentCrosshairSize = 1.0
@@ -87,11 +92,13 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
         }
         
         func movePaperBoy(currentPitch:Float) {
-            let step:Float = Float(currentSpeed/300.0)
+            //CHANGE
+             self.paperBoyNode.transform = SCNMatrix4Rotate(self.paperBoyNode.transform, currentPitch, 0.0, 1.0, 0.0)
+           /* let step:Float = Float(currentSpeed/300.0)
             let x:Float = 0.0
             let y:Float = 0.0
             let z:Float = step
-            var paperBoyPivot = self.paperBoyNode.pivot
+            var paperBoyPivot = self.paperBoyNode.transform
             
             if abs(currentPitch) > 0.005 {
                 paperBoyPivot = SCNMatrix4Rotate(paperBoyPivot, currentPitch, 0.0, -1.0, 0.0)
@@ -100,9 +107,11 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
             let rotatedPosition = self.position(position: SCNVector3Make(x,y,z), multipliedByRotation: paperBoyNode.rotation)
             paperBoyPivot = SCNMatrix4Translate(paperBoyPivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
             
+           // self.paperBoyNode.pivot = SCNMatrix4Translate(self.paperBoyNode.pivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
             
             
-            self.paperBoyNode.pivot = paperBoyPivot
+            
+            self.paperBoyNode.transform = paperBoyPivot*/
         }
     }
     

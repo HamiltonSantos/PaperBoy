@@ -17,6 +17,7 @@ class SPScene : NSObject {
     
     
     var cameraNode: SCNNode!
+    var rightCameraNode: SCNNode!
     var newspaper: SCNNode!
     var paperBoyNode: SCNNode!
     
@@ -25,10 +26,15 @@ class SPScene : NSObject {
 
         // camera
         cameraNode = sharedScene.childNode("cameraNode")
+        //CHANGE
+        rightCameraNode = sharedScene.childNode("rightCamera")
         newspaper = sharedScene.childNode("newspaper")
         paperBoyNode = sharedScene.childNode("paperBoyNode")
         
         sharedScene.background.contents = UIImage(named: "sky")
+        
+        //CHANGE
+        self.paperBoyNode.pivot = SCNMatrix4MakeTranslation(-1.4, 0, 24)
     }
     
 }

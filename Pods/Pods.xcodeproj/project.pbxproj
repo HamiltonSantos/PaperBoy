@@ -7,118 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1929E2CF18D3F7AA5FDCD848F31A5CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */; };
-		2C3D786DE514B46F4E7AB23CF0243FBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */; };
-		6AAFA2F344A6B58F728AF958F3FE6D89 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA8FFB2F306345702A20E3FE7CE6EF7 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77F240DBEBCFBBB539545A0309BFE0CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */; };
-		92AED971B91C640191A5ABA1567FE358 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A110336E93C3E786F9B32956E29A3E /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		991BFD139F6A45C9B654960C2F6A7F09 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D696A8CDEBE87CDE80E57AE0E305C5F /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		ACFE60AB34A7FEF697E6EEFB62436A8D /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D9F3F23E9E53DAFA379995A9E13E58 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAC62DB4A5A0D6447723C666E1D0AA4A /* Pods-PaperBoyMultiplayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E655AE0B18DF0CB1CCF3E6745DF5EF /* Pods-PaperBoyMultiplayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9A6ACE07A355D947B59E18E6C5B58B0 /* Pods-PaperBoyVR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD10A0A2F1D28463408C72F58443332 /* Pods-PaperBoyVR-dummy.m */; };
-		CA29C19DD7715A631725BA1016FF001D /* Pods-PaperBoyMultiplayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D25903440E2B4D9E99B0AB74E89C78ED /* Pods-PaperBoyMultiplayer-dummy.m */; };
-		CF85018BF07FCD76F40D0C1BCB504FE0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED316EE84B1D3AAE415457D92E62A3A0 /* CFNetwork.framework */; };
-		D9A44696356E299F3C9A4BFF9E57343F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 098765466D421180F3953EF8EEDDCEF1 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DCFDACEC7EBF4EF247FC6CFDEA22F10D /* Pods-PaperBoyVR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A78C150F16FB739D572957B1F46678C5 /* Pods-PaperBoyVR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F45B40DF0BF596BDCD96B2D85EF848FA /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E98378F2CF04086E8088C6A14347C33 /* CocoaAsyncSocket-dummy.m */; };
-		FE796BCBE8CD47152B3A3EC7529F78EE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E967D042C48D5885583D70105EF16526 /* Security.framework */; };
+		2472D41AC54C1C68DD015B704E5B2FFC /* CocoaAsyncSocket-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8E6575C3A859CE46C72BB72F0FEE3B /* CocoaAsyncSocket-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25E8D489333AF99606E86EECFC1DEE1D /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C418C28EF558745BF35A5A1D92082C2E /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33EBBE75F6A5B647F44013B064EC2251 /* Pods-PaperBoyMultiplayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E655AE0B18DF0CB1CCF3E6745DF5EF /* Pods-PaperBoyMultiplayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A9FADF71C35222491AB6D68AF21C281 /* Pods-PaperBoyMultiplayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D25903440E2B4D9E99B0AB74E89C78ED /* Pods-PaperBoyMultiplayer-dummy.m */; };
+		523DE5EEE8E050739808BE24726B2253 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D7203FA43B2820A1F415742CDD5D7 /* Security.framework */; };
+		58314A8EC8D9BB974174F0F91BE60BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED7E9133007732E1126E0E013989DCC /* Foundation.framework */; };
+		67233E8D7C6E8B59E31C08A7033209FD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7E4F2312E56DC02A175116E5CF2AB8 /* CFNetwork.framework */; };
+		7403574BF6800023AFAF9E68B87B8C86 /* Pods-PaperBoyVR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A78C150F16FB739D572957B1F46678C5 /* Pods-PaperBoyVR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		776DAA8D15B6F440BD2FD05A5D31F375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D150F4CF5493A534430561DB67FC40 /* Foundation.framework */; };
+		78BE43C383BA5D5CF99AE87928B099E5 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A13247690F1DB3883CE6E5E65D38B9 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		815C1B6AD116F12F10F098EDE9730F5D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCCCECC679CCF282D510A0F892A6C0C /* CFNetwork.framework */; };
+		87EBF0D206EC659B1773DD2A26E97268 /* CocoaAsyncSocket-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB45986C9474738C2E019802315A6DC /* CocoaAsyncSocket-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88CA90C8DDA2A5473AD16F3CFC325064 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBE74AF64B1F7EA49D81EA8B0D3CF7D /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98F636775BD15AF76CB94EC21FB3250D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA23905B75BA2D748CFB58B11266130 /* Security.framework */; };
+		9CC560F8BDCD06A56813FF6B38B67043 /* CocoaAsyncSocket-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F59B1E0CEB8E58C5F2F1C12681F658 /* CocoaAsyncSocket-tvOS-dummy.m */; };
+		A521BCA43E726E5C3C56948C20704830 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F99FFC83AC19E9A9B9B6AEE84AA35794 /* GCDAsyncSocket.m */; };
+		A9A58403C6A359F7D6FB27A394C9CA38 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F99FFC83AC19E9A9B9B6AEE84AA35794 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AA06B0B4EA5A92394B65F05B7AFA7383 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C418C28EF558745BF35A5A1D92082C2E /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4A9B9ADC752DADBAC6CDC4876E575C6 /* CocoaAsyncSocket-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CAD6022F09787B0C157527655C477E /* CocoaAsyncSocket-iOS-dummy.m */; };
+		C94C91132B74EBC73300AC49CF06B6C0 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBE74AF64B1F7EA49D81EA8B0D3CF7D /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04C511D24975B7C1C86DA19D152105F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A13247690F1DB3883CE6E5E65D38B9 /* GCDAsyncUdpSocket.m */; };
+		EF0D1985A700B9999CB8AE5B54F17028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D150F4CF5493A534430561DB67FC40 /* Foundation.framework */; };
+		F32C465DFD9DF77241468A69DDFA1167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED7E9133007732E1126E0E013989DCC /* Foundation.framework */; };
+		FE1EB0C847345F0A43C3C2CF26E45318 /* Pods-PaperBoyVR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD10A0A2F1D28463408C72F58443332 /* Pods-PaperBoyVR-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9F82374A18399A9A5C028678FA0AC965 /* PBXContainerItemProxy */ = {
+		347D93BE1829BBD61A01C82D6F30FA9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B37E19CA872A7535725D1E1946E5C271;
-			remoteInfo = CocoaAsyncSocket;
+			remoteGlobalIDString = B5972CB42C666D32D52D92E9D6F5CFE0;
+			remoteInfo = "CocoaAsyncSocket-iOS";
 		};
-		AFBFCBF0C5C0BA9A6185B821C9400569 /* PBXContainerItemProxy */ = {
+		56702F9C995EABB17AAE6171FCD3A3B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B37E19CA872A7535725D1E1946E5C271;
-			remoteInfo = CocoaAsyncSocket;
+			remoteGlobalIDString = 07E3A0698CB7C94827AB22E87BF82AF7;
+			remoteInfo = "CocoaAsyncSocket-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03C01FC18DCE481F29FCF4C3D9E4FBF6 /* Pods_PaperBoyVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaperBoyVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05507B98D17ADDAACD250A73813DD9C3 /* Pods-PaperBoyMultiplayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaperBoyMultiplayer-acknowledgements.plist"; sourceTree = "<group>"; };
-		098765466D421180F3953EF8EEDDCEF1 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		14BBEA83D5DD39F6766B4DCDCC3C180D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C67B6F2A01B7029400BCF9CA8CC85C8 /* Pods-PaperBoyMultiplayer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaperBoyMultiplayer-resources.sh"; sourceTree = "<group>"; };
-		1D696A8CDEBE87CDE80E57AE0E305C5F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		1E021F8B4A6786494C39A7A03D5E825C /* Pods-PaperBoyVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaperBoyVR.debug.xcconfig"; sourceTree = "<group>"; };
-		2E450FE3187B6CB3341F5BE699A40184 /* Pods_PaperBoyMultiplayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaperBoyMultiplayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		1EA23905B75BA2D748CFB58B11266130 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2710012737DA731CFF39B9C03E7BBB11 /* CocoaAsyncSocket-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CocoaAsyncSocket-iOS.xcconfig"; sourceTree = "<group>"; };
+		2F7AAFFCEF043E330A7B6369573BBDC5 /* CocoaAsyncSocket-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CocoaAsyncSocket-tvOS-prefix.pch"; path = "../CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		40CAD6022F09787B0C157527655C477E /* CocoaAsyncSocket-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-iOS-dummy.m"; sourceTree = "<group>"; };
 		49536A88F4F3AF90C7851E469C2B1E02 /* Pods-PaperBoyMultiplayer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaperBoyMultiplayer-frameworks.sh"; sourceTree = "<group>"; };
-		4CA8FFB2F306345702A20E3FE7CE6EF7 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4DBE74AF64B1F7EA49D81EA8B0D3CF7D /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		52B09E9C16F8E2D8B68C005F95DB4323 /* CocoaAsyncSocket-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "CocoaAsyncSocket-iOS.modulemap"; sourceTree = "<group>"; };
 		55AA1A8AC61DD329A2486F980FE738B1 /* Pods-PaperBoyMultiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaperBoyMultiplayer.debug.xcconfig"; sourceTree = "<group>"; };
 		55E655AE0B18DF0CB1CCF3E6745DF5EF /* Pods-PaperBoyMultiplayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaperBoyMultiplayer-umbrella.h"; sourceTree = "<group>"; };
-		58E8AE97A4ECDF88FD9A64FFACB061D1 /* Pods-PaperBoyVR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PaperBoyVR.modulemap"; sourceTree = "<group>"; };
+		58E8AE97A4ECDF88FD9A64FFACB061D1 /* Pods-PaperBoyVR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaperBoyVR.modulemap"; sourceTree = "<group>"; };
+		60FE5AA0905ED3DFC9F2A2F64C29767B /* Pods_PaperBoyMultiplayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaperBoyMultiplayer.framework; path = "Pods-PaperBoyMultiplayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6316A282CA3FA3A3693479BC6B13FF63 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = "CocoaAsyncSocket-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F59B1E0CEB8E58C5F2F1C12681F658 /* CocoaAsyncSocket-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CocoaAsyncSocket-tvOS-dummy.m"; path = "../CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS-dummy.m"; sourceTree = "<group>"; };
+		6ED7E9133007732E1126E0E013989DCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6F3371E04E9A879FFCC4AF52A5863D95 /* Pods-PaperBoyVR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaperBoyVR-acknowledgements.markdown"; sourceTree = "<group>"; };
-		75F9206B99E5B5423D6B61D755C011CC /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		74D150F4CF5493A534430561DB67FC40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B6DEC3F2AEE15719B5B4DDC0ADC423D /* Pods-PaperBoyVR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaperBoyVR-resources.sh"; sourceTree = "<group>"; };
-		84A110336E93C3E786F9B32956E29A3E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		86340A99F20BEC0D9E6F18F9080B8720 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
-		8897EF90B2D55946A61AD5A10C38B75C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E98378F2CF04086E8088C6A14347C33 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		7C57349786526FB3E3805BBA7E780E8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = "CocoaAsyncSocket-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8E6575C3A859CE46C72BB72F0FEE3B /* CocoaAsyncSocket-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CocoaAsyncSocket-tvOS-umbrella.h"; path = "../CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		934CF37BCC67FBCC2584AA9E1E654427 /* Pods-PaperBoyVR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaperBoyVR.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CE29613EA0AE85AE5A22F39F039E5E9 /* CocoaAsyncSocket-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CocoaAsyncSocket-tvOS.xcconfig"; path = "../CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS.xcconfig"; sourceTree = "<group>"; };
 		A630CCD18433EF9A33A778C86929F771 /* Pods-PaperBoyMultiplayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaperBoyMultiplayer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A78C150F16FB739D572957B1F46678C5 /* Pods-PaperBoyVR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaperBoyVR-umbrella.h"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE7AA3B56C7709409FC274EFCF118F23 /* CocoaAsyncSocket-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-iOS-prefix.pch"; sourceTree = "<group>"; };
 		BABDC6573AC759CB660DBF091BDE0AB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6D7203FA43B2820A1F415742CDD5D7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		BBCCCECC679CCF282D510A0F892A6C0C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		BCB45986C9474738C2E019802315A6DC /* CocoaAsyncSocket-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-iOS-umbrella.h"; sourceTree = "<group>"; };
+		C418C28EF558745BF35A5A1D92082C2E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
 		C7138F7FCF904115E4F3918FE832F688 /* Pods-PaperBoyVR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaperBoyVR-frameworks.sh"; sourceTree = "<group>"; };
-		CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD7E4F2312E56DC02A175116E5CF2AB8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		CF75EAEE86EFB4C38FC405A37C8540C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25903440E2B4D9E99B0AB74E89C78ED /* Pods-PaperBoyMultiplayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaperBoyMultiplayer-dummy.m"; sourceTree = "<group>"; };
 		D368506B63265E3226D99F91E90FA738 /* Pods-PaperBoyVR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaperBoyVR-acknowledgements.plist"; sourceTree = "<group>"; };
-		D6D9F3F23E9E53DAFA379995A9E13E58 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
 		DBD10A0A2F1D28463408C72F58443332 /* Pods-PaperBoyVR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaperBoyVR-dummy.m"; sourceTree = "<group>"; };
-		DFF2DDF523E1AECE90891409B82AFB99 /* Pods-PaperBoyMultiplayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PaperBoyMultiplayer.modulemap"; sourceTree = "<group>"; };
-		E967D042C48D5885583D70105EF16526 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		ED316EE84B1D3AAE415457D92E62A3A0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		EE3C072673F72ED73C3C66DB0B996B53 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC512BC02E4AA0AE66DA429730987E75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../CocoaAsyncSocket-tvOS/Info.plist"; sourceTree = "<group>"; };
+		DFF2DDF523E1AECE90891409B82AFB99 /* Pods-PaperBoyMultiplayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaperBoyMultiplayer.modulemap"; sourceTree = "<group>"; };
+		E6A13247690F1DB3883CE6E5E65D38B9 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		E6FB70B2872096026B72806CBBCB2EA7 /* CocoaAsyncSocket-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "CocoaAsyncSocket-tvOS.modulemap"; path = "../CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS.modulemap"; sourceTree = "<group>"; };
 		EF86A0267FFB1AAC029736F8B14FD95F /* Pods-PaperBoyMultiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaperBoyMultiplayer.release.xcconfig"; sourceTree = "<group>"; };
+		F6DCD1918B85051C5CCAE9A0C0CB9849 /* Pods_PaperBoyVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaperBoyVR.framework; path = "Pods-PaperBoyVR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99FFC83AC19E9A9B9B6AEE84AA35794 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D80663FADCC9B543A3D2BD336374614 /* Frameworks */ = {
+		14B1BCD39987BF6CDA7200595ECB0773 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1929E2CF18D3F7AA5FDCD848F31A5CF6 /* Foundation.framework in Frameworks */,
+				F32C465DFD9DF77241468A69DDFA1167 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9ED45E2D8B8BCFB22AEA1A0810ABD96 /* Frameworks */ = {
+		2FD34FB28D5B62E6A6EA81F26A0B0857 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF85018BF07FCD76F40D0C1BCB504FE0 /* CFNetwork.framework in Frameworks */,
-				77F240DBEBCFBBB539545A0309BFE0CC /* Foundation.framework in Frameworks */,
-				FE796BCBE8CD47152B3A3EC7529F78EE /* Security.framework in Frameworks */,
+				776DAA8D15B6F440BD2FD05A5D31F375 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB5ED9F6B2B6F1A1D41BE9B058DA8B99 /* Frameworks */ = {
+		9F40D0986B4D6A53B7CF769CE37702AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C3D786DE514B46F4E7AB23CF0243FBD /* Foundation.framework in Frameworks */,
+				67233E8D7C6E8B59E31C08A7033209FD /* CFNetwork.framework in Frameworks */,
+				58314A8EC8D9BB974174F0F91BE60BB0 /* Foundation.framework in Frameworks */,
+				523DE5EEE8E050739808BE24726B2253 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DB151E11FD3519FD71317C0E9B0784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815C1B6AD116F12F10F098EDE9730F5D /* CFNetwork.framework in Frameworks */,
+				EF0D1985A700B9999CB8AE5B54F17028 /* Foundation.framework in Frameworks */,
+				98F636775BD15AF76CB94EC21FB3250D /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B728418FA3338AB680410C5B26CF547F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1C4217A3AABFE5B9C077D6F6A9120EC4 /* Pods-PaperBoyVR */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,32 +161,47 @@
 		3750E20CAB4987ACB8AB27B6C25C1D60 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B16CCCC916CD9D13BBF53EA0C69C4615 /* CocoaAsyncSocket */,
+				C179740D7065E2574CB8611CCD2D943D /* CocoaAsyncSocket */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		557C7CF8D4466D636F16673BAB31EEF1 /* Support Files */ = {
+		379B062A7BBF0EB4444BE96FFC80F8C7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				86340A99F20BEC0D9E6F18F9080B8720 /* CocoaAsyncSocket.modulemap */,
-				2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */,
-				8E98378F2CF04086E8088C6A14347C33 /* CocoaAsyncSocket-dummy.m */,
-				75F9206B99E5B5423D6B61D755C011CC /* CocoaAsyncSocket-prefix.pch */,
-				D6D9F3F23E9E53DAFA379995A9E13E58 /* CocoaAsyncSocket-umbrella.h */,
-				8897EF90B2D55946A61AD5A10C38B75C /* Info.plist */,
+				52B09E9C16F8E2D8B68C005F95DB4323 /* CocoaAsyncSocket-iOS.modulemap */,
+				2710012737DA731CFF39B9C03E7BBB11 /* CocoaAsyncSocket-iOS.xcconfig */,
+				40CAD6022F09787B0C157527655C477E /* CocoaAsyncSocket-iOS-dummy.m */,
+				AE7AA3B56C7709409FC274EFCF118F23 /* CocoaAsyncSocket-iOS-prefix.pch */,
+				BCB45986C9474738C2E019802315A6DC /* CocoaAsyncSocket-iOS-umbrella.h */,
+				E6FB70B2872096026B72806CBBCB2EA7 /* CocoaAsyncSocket-tvOS.modulemap */,
+				9CE29613EA0AE85AE5A22F39F039E5E9 /* CocoaAsyncSocket-tvOS.xcconfig */,
+				64F59B1E0CEB8E58C5F2F1C12681F658 /* CocoaAsyncSocket-tvOS-dummy.m */,
+				2F7AAFFCEF043E330A7B6369573BBDC5 /* CocoaAsyncSocket-tvOS-prefix.pch */,
+				8B8E6575C3A859CE46C72BB72F0FEE3B /* CocoaAsyncSocket-tvOS-umbrella.h */,
+				DC512BC02E4AA0AE66DA429730987E75 /* Info.plist */,
+				CF75EAEE86EFB4C38FC405A37C8540C3 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CocoaAsyncSocket";
+			path = "../Target Support Files/CocoaAsyncSocket-iOS";
+			sourceTree = "<group>";
+		};
+		7556FD02EB07DC82E1AEDD87783FB497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5B85439916D451C95DFEE36FF3CD4BF /* iOS */,
+				92F7E97FC0390034A4CC4B0CDBE34942 /* tvOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				7556FD02EB07DC82E1AEDD87783FB497 /* Frameworks */,
 				3750E20CAB4987ACB8AB27B6C25C1D60 /* Pods */,
-				A4F3F708A8815248D570408C8905C0C5 /* Products */,
+				FC86D4686C13FC9D8829921FE2BDF366 /* Products */,
 				8B8217EF2536D6B9971EE8B42F0961E1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -179,13 +215,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		982AE8715AD34D5D99A50B615809B1F1 /* GCD */ = {
+		92F7E97FC0390034A4CC4B0CDBE34942 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				4CA8FFB2F306345702A20E3FE7CE6EF7 /* GCDAsyncSocket.h */,
-				1D696A8CDEBE87CDE80E57AE0E305C5F /* GCDAsyncSocket.m */,
-				84A110336E93C3E786F9B32956E29A3E /* GCDAsyncUdpSocket.h */,
-				098765466D421180F3953EF8EEDDCEF1 /* GCDAsyncUdpSocket.m */,
+				CD7E4F2312E56DC02A175116E5CF2AB8 /* CFNetwork.framework */,
+				6ED7E9133007732E1126E0E013989DCC /* Foundation.framework */,
+				BB6D7203FA43B2820A1F415742CDD5D7 /* Security.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		9ACA245BE3B2496F24DE6E72262EB9D5 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				C418C28EF558745BF35A5A1D92082C2E /* GCDAsyncSocket.h */,
+				F99FFC83AC19E9A9B9B6AEE84AA35794 /* GCDAsyncSocket.m */,
+				4DBE74AF64B1F7EA49D81EA8B0D3CF7D /* GCDAsyncUdpSocket.h */,
+				E6A13247690F1DB3883CE6E5E65D38B9 /* GCDAsyncUdpSocket.m */,
 			);
 			name = GCD;
 			sourceTree = "<group>";
@@ -208,118 +254,147 @@
 			path = "Target Support Files/Pods-PaperBoyMultiplayer";
 			sourceTree = "<group>";
 		};
-		A4F3F708A8815248D570408C8905C0C5 /* Products */ = {
+		C179740D7065E2574CB8611CCD2D943D /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				EE3C072673F72ED73C3C66DB0B996B53 /* CocoaAsyncSocket.framework */,
-				2E450FE3187B6CB3341F5BE699A40184 /* Pods_PaperBoyMultiplayer.framework */,
-				03C01FC18DCE481F29FCF4C3D9E4FBF6 /* Pods_PaperBoyVR.framework */,
+				9ACA245BE3B2496F24DE6E72262EB9D5 /* GCD */,
+				379B062A7BBF0EB4444BE96FFC80F8C7 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B16CCCC916CD9D13BBF53EA0C69C4615 /* CocoaAsyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				982AE8715AD34D5D99A50B615809B1F1 /* GCD */,
-				557C7CF8D4466D636F16673BAB31EEF1 /* Support Files */,
-			);
+			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
-		B728418FA3338AB680410C5B26CF547F /* iOS */ = {
+		D5B85439916D451C95DFEE36FF3CD4BF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				ED316EE84B1D3AAE415457D92E62A3A0 /* CFNetwork.framework */,
-				CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */,
-				E967D042C48D5885583D70105EF16526 /* Security.framework */,
+				BBCCCECC679CCF282D510A0F892A6C0C /* CFNetwork.framework */,
+				74D150F4CF5493A534430561DB67FC40 /* Foundation.framework */,
+				1EA23905B75BA2D748CFB58B11266130 /* Security.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC86D4686C13FC9D8829921FE2BDF366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C57349786526FB3E3805BBA7E780E8C /* CocoaAsyncSocket.framework */,
+				6316A282CA3FA3A3693479BC6B13FF63 /* CocoaAsyncSocket.framework */,
+				60FE5AA0905ED3DFC9F2A2F64C29767B /* Pods_PaperBoyMultiplayer.framework */,
+				F6DCD1918B85051C5CCAE9A0C0CB9849 /* Pods_PaperBoyVR.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		024941BECF3AAF01A01733054245471B /* Headers */ = {
+		0C2D931BFF292EF559BE71E3C83AD574 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC62DB4A5A0D6447723C666E1D0AA4A /* Pods-PaperBoyMultiplayer-umbrella.h in Headers */,
+				2472D41AC54C1C68DD015B704E5B2FFC /* CocoaAsyncSocket-tvOS-umbrella.h in Headers */,
+				AA06B0B4EA5A92394B65F05B7AFA7383 /* GCDAsyncSocket.h in Headers */,
+				C94C91132B74EBC73300AC49CF06B6C0 /* GCDAsyncUdpSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F6279547BA8C6095CA882FB1059614 /* Headers */ = {
+		CA67F003AC265453F5AA9513F80B4C2B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFE60AB34A7FEF697E6EEFB62436A8D /* CocoaAsyncSocket-umbrella.h in Headers */,
-				6AAFA2F344A6B58F728AF958F3FE6D89 /* GCDAsyncSocket.h in Headers */,
-				92AED971B91C640191A5ABA1567FE358 /* GCDAsyncUdpSocket.h in Headers */,
+				33EBBE75F6A5B647F44013B064EC2251 /* Pods-PaperBoyMultiplayer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5702C27A7A6206DFF98D4774648279DF /* Headers */ = {
+		CBA5BDEA9A5D22F31E864585BBEB2455 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFDACEC7EBF4EF247FC6CFDEA22F10D /* Pods-PaperBoyVR-umbrella.h in Headers */,
+				87EBF0D206EC659B1773DD2A26E97268 /* CocoaAsyncSocket-iOS-umbrella.h in Headers */,
+				25E8D489333AF99606E86EECFC1DEE1D /* GCDAsyncSocket.h in Headers */,
+				88CA90C8DDA2A5473AD16F3CFC325064 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2DA16D993A7241319D1B549DF71D58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7403574BF6800023AFAF9E68B87B8C86 /* Pods-PaperBoyVR-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0E4B9C7E11168F68DE638392B2643C6A /* Pods-PaperBoyMultiplayer */ = {
+		07E3A0698CB7C94827AB22E87BF82AF7 /* CocoaAsyncSocket-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51E44B3D57BC5D7B51F9397AB05E902D /* Build configuration list for PBXNativeTarget "Pods-PaperBoyMultiplayer" */;
+			buildConfigurationList = 93EBD5A8F1032ACFE713F61B10901080 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-tvOS" */;
 			buildPhases = (
-				A69F3EDF1B334CF5FBF06AC05E060B49 /* Sources */,
-				6D80663FADCC9B543A3D2BD336374614 /* Frameworks */,
-				024941BECF3AAF01A01733054245471B /* Headers */,
+				6584545721EB7F38AE481A93AAE591CF /* Sources */,
+				9F40D0986B4D6A53B7CF769CE37702AE /* Frameworks */,
+				0C2D931BFF292EF559BE71E3C83AD574 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				32957AD26211D9AD17556100EEDD0F94 /* PBXTargetDependency */,
+			);
+			name = "CocoaAsyncSocket-tvOS";
+			productName = "CocoaAsyncSocket-tvOS";
+			productReference = 6316A282CA3FA3A3693479BC6B13FF63 /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3976FD9EC4819E2CFF0A948839E83AA7 /* Pods-PaperBoyMultiplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB1D5F802BF5C0F02F5B88E63E2380E /* Build configuration list for PBXNativeTarget "Pods-PaperBoyMultiplayer" */;
+			buildPhases = (
+				9346BC48B2B1C8E99F3535D56118E18C /* Sources */,
+				14B1BCD39987BF6CDA7200595ECB0773 /* Frameworks */,
+				CA67F003AC265453F5AA9513F80B4C2B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE81910173CA1632C937D1B81AC1501C /* PBXTargetDependency */,
 			);
 			name = "Pods-PaperBoyMultiplayer";
 			productName = "Pods-PaperBoyMultiplayer";
-			productReference = 2E450FE3187B6CB3341F5BE699A40184 /* Pods_PaperBoyMultiplayer.framework */;
+			productReference = 60FE5AA0905ED3DFC9F2A2F64C29767B /* Pods_PaperBoyMultiplayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		33053C9A94A39CE9A97FD4A490E835CF /* Pods-PaperBoyVR */ = {
+		86A4163A629FE39454AEB1503A0CE045 /* Pods-PaperBoyVR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FEFEAFD0CE2DE6E09371CD48EF7AD00 /* Build configuration list for PBXNativeTarget "Pods-PaperBoyVR" */;
+			buildConfigurationList = E4CBBFC29EFD38E7AE38E17655A74D8B /* Build configuration list for PBXNativeTarget "Pods-PaperBoyVR" */;
 			buildPhases = (
-				F39D62DE3DB7C8076F9CB7715BB665AC /* Sources */,
-				EB5ED9F6B2B6F1A1D41BE9B058DA8B99 /* Frameworks */,
-				5702C27A7A6206DFF98D4774648279DF /* Headers */,
+				71B5C34778B56381AA5E9AF11A89FD2E /* Sources */,
+				2FD34FB28D5B62E6A6EA81F26A0B0857 /* Frameworks */,
+				CE2DA16D993A7241319D1B549DF71D58 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				05970A7E87DCB66A34168B06BF52A80D /* PBXTargetDependency */,
+				B88CE0395FBE71C7670EC7565FB17930 /* PBXTargetDependency */,
 			);
 			name = "Pods-PaperBoyVR";
 			productName = "Pods-PaperBoyVR";
-			productReference = 03C01FC18DCE481F29FCF4C3D9E4FBF6 /* Pods_PaperBoyVR.framework */;
+			productReference = F6DCD1918B85051C5CCAE9A0C0CB9849 /* Pods_PaperBoyVR.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B37E19CA872A7535725D1E1946E5C271 /* CocoaAsyncSocket */ = {
+		B5972CB42C666D32D52D92E9D6F5CFE0 /* CocoaAsyncSocket-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 551479B287B69C7447DFBC6CA5EADF0B /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildConfigurationList = B9094F50D67BCB3E664B0FF644A17F60 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-iOS" */;
 			buildPhases = (
-				217D9EA001DB8A7A00EBCC79A99280A3 /* Sources */,
-				B9ED45E2D8B8BCFB22AEA1A0810ABD96 /* Frameworks */,
-				41F6279547BA8C6095CA882FB1059614 /* Headers */,
+				2FEDA46070CE150F3C872F38AD7023F1 /* Sources */,
+				D1DB151E11FD3519FD71317C0E9B0784 /* Frameworks */,
+				CBA5BDEA9A5D22F31E864585BBEB2455 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CocoaAsyncSocket;
-			productName = CocoaAsyncSocket;
-			productReference = EE3C072673F72ED73C3C66DB0B996B53 /* CocoaAsyncSocket.framework */;
+			name = "CocoaAsyncSocket-iOS";
+			productName = "CocoaAsyncSocket-iOS";
+			productReference = 7C57349786526FB3E3805BBA7E780E8C /* CocoaAsyncSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -328,19 +403,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					0E4B9C7E11168F68DE638392B2643C6A = {
-						DevelopmentTeam = 28CU5YV2B9;
-					};
-					33053C9A94A39CE9A97FD4A490E835CF = {
-						DevelopmentTeam = 28CU5YV2B9;
-					};
-					B37E19CA872A7535725D1E1946E5C271 = {
-						DevelopmentTeam = 28CU5YV2B9;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -350,66 +414,78 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A4F3F708A8815248D570408C8905C0C5 /* Products */;
+			productRefGroup = FC86D4686C13FC9D8829921FE2BDF366 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B37E19CA872A7535725D1E1946E5C271 /* CocoaAsyncSocket */,
-				0E4B9C7E11168F68DE638392B2643C6A /* Pods-PaperBoyMultiplayer */,
-				33053C9A94A39CE9A97FD4A490E835CF /* Pods-PaperBoyVR */,
+				B5972CB42C666D32D52D92E9D6F5CFE0 /* CocoaAsyncSocket-iOS */,
+				07E3A0698CB7C94827AB22E87BF82AF7 /* CocoaAsyncSocket-tvOS */,
+				3976FD9EC4819E2CFF0A948839E83AA7 /* Pods-PaperBoyMultiplayer */,
+				86A4163A629FE39454AEB1503A0CE045 /* Pods-PaperBoyVR */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		217D9EA001DB8A7A00EBCC79A99280A3 /* Sources */ = {
+		2FEDA46070CE150F3C872F38AD7023F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F45B40DF0BF596BDCD96B2D85EF848FA /* CocoaAsyncSocket-dummy.m in Sources */,
-				991BFD139F6A45C9B654960C2F6A7F09 /* GCDAsyncSocket.m in Sources */,
-				D9A44696356E299F3C9A4BFF9E57343F /* GCDAsyncUdpSocket.m in Sources */,
+				B4A9B9ADC752DADBAC6CDC4876E575C6 /* CocoaAsyncSocket-iOS-dummy.m in Sources */,
+				A9A58403C6A359F7D6FB27A394C9CA38 /* GCDAsyncSocket.m in Sources */,
+				78BE43C383BA5D5CF99AE87928B099E5 /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A69F3EDF1B334CF5FBF06AC05E060B49 /* Sources */ = {
+		6584545721EB7F38AE481A93AAE591CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA29C19DD7715A631725BA1016FF001D /* Pods-PaperBoyMultiplayer-dummy.m in Sources */,
+				9CC560F8BDCD06A56813FF6B38B67043 /* CocoaAsyncSocket-tvOS-dummy.m in Sources */,
+				A521BCA43E726E5C3C56948C20704830 /* GCDAsyncSocket.m in Sources */,
+				D04C511D24975B7C1C86DA19D152105F /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F39D62DE3DB7C8076F9CB7715BB665AC /* Sources */ = {
+		71B5C34778B56381AA5E9AF11A89FD2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A6ACE07A355D947B59E18E6C5B58B0 /* Pods-PaperBoyVR-dummy.m in Sources */,
+				FE1EB0C847345F0A43C3C2CF26E45318 /* Pods-PaperBoyVR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9346BC48B2B1C8E99F3535D56118E18C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9FADF71C35222491AB6D68AF21C281 /* Pods-PaperBoyMultiplayer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05970A7E87DCB66A34168B06BF52A80D /* PBXTargetDependency */ = {
+		B88CE0395FBE71C7670EC7565FB17930 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CocoaAsyncSocket;
-			target = B37E19CA872A7535725D1E1946E5C271 /* CocoaAsyncSocket */;
-			targetProxy = AFBFCBF0C5C0BA9A6185B821C9400569 /* PBXContainerItemProxy */;
+			name = "CocoaAsyncSocket-iOS";
+			target = B5972CB42C666D32D52D92E9D6F5CFE0 /* CocoaAsyncSocket-iOS */;
+			targetProxy = 347D93BE1829BBD61A01C82D6F30FA9B /* PBXContainerItemProxy */;
 		};
-		32957AD26211D9AD17556100EEDD0F94 /* PBXTargetDependency */ = {
+		BE81910173CA1632C937D1B81AC1501C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CocoaAsyncSocket;
-			target = B37E19CA872A7535725D1E1946E5C271 /* CocoaAsyncSocket */;
-			targetProxy = 9F82374A18399A9A5C028678FA0AC965 /* PBXContainerItemProxy */;
+			name = "CocoaAsyncSocket-tvOS";
+			target = 07E3A0698CB7C94827AB22E87BF82AF7 /* CocoaAsyncSocket-tvOS */;
+			targetProxy = 56702F9C995EABB17AAE6171FCD3A3B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2B389FAB51F6EEA43F72CA7BDC8E8E28 /* Debug */ = {
+		47EF0BFCDF5711609BB78F767A2DD159 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -423,11 +499,87 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49AD62E726E17FC7348EC27994999785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2710012737DA731CFF39B9C03E7BBB11 /* CocoaAsyncSocket-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		613976F6F4DA56D19883E468A2B8F709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -440,23 +592,28 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
-		472171BDAF657A6B2AEE2B58CA92FE18 /* Debug */ = {
+		79E557EF53719C7926971E17B8A7ECC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E021F8B4A6786494C39A7A03D5E825C /* Pods-PaperBoyVR.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-PaperBoyVR/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -467,6 +624,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PaperBoyVR;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -476,147 +634,55 @@
 			};
 			name = Debug;
 		};
-		5A0C6FE968931D888F00C9EC18DDF5BC /* Release */ = {
+		7CF0F80532D5B6C58CD0264BB2615DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE29613EA0AE85AE5A22F39F039E5E9 /* CocoaAsyncSocket-tvOS.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		65623F3904E239DAD9266E6E60A46537 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF86A0267FFB1AAC029736F8B14FD95F /* Pods-PaperBoyMultiplayer.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PaperBoyMultiplayer/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PaperBoyMultiplayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8D70A93F6017E4504A9638B5F403B97E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 28CU5YV2B9;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = CocoaAsyncSocket;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		ACCC3BA4E3E0D41D8E8B8B632937EACB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 934CF37BCC67FBCC2584AA9E1E654427 /* Pods-PaperBoyVR.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 28CU5YV2B9;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PaperBoyVR/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PaperBoyVR/Pods-PaperBoyVR.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PaperBoyVR;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AD91CFCBCE361758F1982BC019458E81 /* Debug */ = {
+		9433CBCC2635091C015AF40C5B11FDA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55AA1A8AC61DD329A2486F980FE738B1 /* Pods-PaperBoyMultiplayer.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-PaperBoyMultiplayer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer.modulemap";
@@ -624,39 +690,145 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PaperBoyMultiplayer;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BD13F5C460A7B29E02468A39B1523E5E /* Debug */ = {
+		A340A94A3298533C523FA3D347DDC6EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */;
+			baseConfigurationReference = EF86A0267FFB1AAC029736F8B14FD95F /* Pods-PaperBoyMultiplayer.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaperBoyMultiplayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaperBoyMultiplayer/Pods-PaperBoyMultiplayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaperBoyMultiplayer;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A370CD23117E3A304FC0E07C0E2DB1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934CF37BCC67FBCC2584AA9E1E654427 /* Pods-PaperBoyVR.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaperBoyVR/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaperBoyVR/Pods-PaperBoyVR.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaperBoyVR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B554C4F66266A823AABD013605EF016B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE29613EA0AE85AE5A22F39F039E5E9 /* CocoaAsyncSocket-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-tvOS/CocoaAsyncSocket-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9A7CACB0DAEAA0CCCD262F2CC361E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2710012737DA731CFF39B9C03E7BBB11 /* CocoaAsyncSocket-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = CocoaAsyncSocket;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -666,38 +838,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FEFEAFD0CE2DE6E09371CD48EF7AD00 /* Build configuration list for PBXNativeTarget "Pods-PaperBoyVR" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				472171BDAF657A6B2AEE2B58CA92FE18 /* Debug */,
-				ACCC3BA4E3E0D41D8E8B8B632937EACB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B389FAB51F6EEA43F72CA7BDC8E8E28 /* Debug */,
-				5A0C6FE968931D888F00C9EC18DDF5BC /* Release */,
+				613976F6F4DA56D19883E468A2B8F709 /* Debug */,
+				47EF0BFCDF5711609BB78F767A2DD159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51E44B3D57BC5D7B51F9397AB05E902D /* Build configuration list for PBXNativeTarget "Pods-PaperBoyMultiplayer" */ = {
+		93EBD5A8F1032ACFE713F61B10901080 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD91CFCBCE361758F1982BC019458E81 /* Debug */,
-				65623F3904E239DAD9266E6E60A46537 /* Release */,
+				7CF0F80532D5B6C58CD0264BB2615DAD /* Debug */,
+				B554C4F66266A823AABD013605EF016B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		551479B287B69C7447DFBC6CA5EADF0B /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+		B9094F50D67BCB3E664B0FF644A17F60 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD13F5C460A7B29E02468A39B1523E5E /* Debug */,
-				8D70A93F6017E4504A9638B5F403B97E /* Release */,
+				F9A7CACB0DAEAA0CCCD262F2CC361E40 /* Debug */,
+				49AD62E726E17FC7348EC27994999785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB1D5F802BF5C0F02F5B88E63E2380E /* Build configuration list for PBXNativeTarget "Pods-PaperBoyMultiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9433CBCC2635091C015AF40C5B11FDA8 /* Debug */,
+				A340A94A3298533C523FA3D347DDC6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4CBBFC29EFD38E7AE38E17655A74D8B /* Build configuration list for PBXNativeTarget "Pods-PaperBoyVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E557EF53719C7926971E17B8A7ECC6 /* Debug */,
+				A370CD23117E3A304FC0E07C0E2DB1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
