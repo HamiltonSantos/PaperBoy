@@ -93,25 +93,25 @@ class GameSceneRendererDelegate: NSObject, SCNSceneRendererDelegate {
         
         func movePaperBoy(currentPitch:Float) {
             //CHANGE
-             self.paperBoyNode.transform = SCNMatrix4Rotate(self.paperBoyNode.transform, currentPitch, 0.0, 1.0, 0.0)
-           /* let step:Float = Float(currentSpeed/300.0)
+            
+            let step:Float = 0.3//Float(currentSpeed/300.0)
             let x:Float = 0.0
             let y:Float = 0.0
             let z:Float = step
-            var paperBoyPivot = self.paperBoyNode.transform
+//            var paperBoyPivot = self.paperBoyNode.transform
             
             if abs(currentPitch) > 0.005 {
-                paperBoyPivot = SCNMatrix4Rotate(paperBoyPivot, currentPitch, 0.0, -1.0, 0.0)
+                self.paperBoyNode.transform = SCNMatrix4Rotate(self.paperBoyNode.transform, currentPitch, 0.0, 1.0, 0.0)
             }
             
             let rotatedPosition = self.position(position: SCNVector3Make(x,y,z), multipliedByRotation: paperBoyNode.rotation)
-            paperBoyPivot = SCNMatrix4Translate(paperBoyPivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
+//            paperBoyPivot = SCNMatrix4Translate(paperBoyPivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
             
            // self.paperBoyNode.pivot = SCNMatrix4Translate(self.paperBoyNode.pivot, rotatedPosition.x, rotatedPosition.y, rotatedPosition.z)
             
             
             
-            self.paperBoyNode.transform = paperBoyPivot*/
+            self.paperBoyNode.position = rotatedPosition
         }
     }
     

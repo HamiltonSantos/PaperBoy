@@ -310,7 +310,7 @@
 				TargetAttributes = {
 					2521F7C81D65E85B00F796A2 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = F684H454M9;
+						DevelopmentTeam = 28CU5YV2B9;
 						LastSwiftMigration = 0800;
 					};
 					25E046A31D92C3CE00958130 = {
@@ -618,7 +618,7 @@
 			baseConfigurationReference = 549439BDD558D80604847731 /* Pods-PaperBoyVR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F684H454M9;
+				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				INFOPLIST_FILE = PaperBoyVR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR2;
@@ -633,7 +633,7 @@
 			baseConfigurationReference = 392D7C155A54134DEE712C8B /* Pods-PaperBoyVR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F684H454M9;
+				DEVELOPMENT_TEAM = 28CU5YV2B9;
 				INFOPLIST_FILE = PaperBoyVR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamiltonsantos.PaperBoyVR2;
